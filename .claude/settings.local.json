@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/jonat/AppData/Roaming/**)",
+      "Read(//c/Users/jonat/AppData/Local/**)",
+      "Bash(where.exe node:*)",
+      "Bash(cmd.exe /c \"where node\")",
+      "Bash(git config:*)"
+    ]
+  }
+}
