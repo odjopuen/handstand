@@ -32,7 +32,7 @@ const whatToExpect = [
   },
   {
     heading: "Small group, real attention",
-    body: "Max 12 people per session. Not because of capacity — because that's the right number for people to actually get coached, not just watched.",
+    body: "Max 16 people per session. Not because of capacity — because that's the right number for people to actually get coached, not just watched.",
   },
 ];
 
