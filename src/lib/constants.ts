@@ -1,16 +1,16 @@
 export const SITE_CONFIG = {
-  name: "Inversion Therapy",
+  name: "Ground Work",
   tagline: "Handstand Practice for Every Body",
   description:
     "Discover the joy of handstands with Toronto's most welcoming practice community. Classes for complete beginners to advanced practitioners.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://inversiontherapy.ca",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://groundwork.ca",
   ogImage: "/images/og/default.jpg",
-  creator: "Inversion Therapy",
+  creator: "Ground Work",
   locale: "en_CA",
 } as const;
 
 export const BUSINESS_INFO = {
-  name: "Inversion Therapy",
+  name: "Ground Work",
   address: {
     street: "", // TODO: Add actual address
     city: "Toronto",

@@ -32,9 +32,11 @@ export function Header() {
         <div className="flex h-16 items-center justify-between lg:h-20">
           <Link
             href="/"
-            className="font-heading text-xl text-charcoal transition-colors hover:text-primary lg:text-2xl"
+            className="font-[family-name:var(--font-bebas)] text-2xl uppercase leading-none tracking-wide transition-colors hover:text-primary lg:text-3xl"
+            style={{ color: scrolled ? "var(--color-charcoal)" : "var(--color-off-white)" }}
           >
-            Inversion Therapy
+            Ground{" "}
+            <span className="text-electric">Work</span>
           </Link>
 
           <Navigation />

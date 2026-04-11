@@ -1,37 +1,89 @@
+"use client";
+
 import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { Section } from "@/components/layout/Section";
-import { buttonVariants } from "@/components/ui/Button";
-import { AnimatedReveal } from "@/components/shared/AnimatedReveal";
+import { motion } from "framer-motion";
 
 export function CTABanner() {
   return (
-    <Section background="sand">
-      <AnimatedReveal>
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-[family-name:var(--font-dm-serif)] text-3xl text-charcoal sm:text-4xl lg:text-5xl">
-            Ready to Try?
-          </h2>
-          <p className="mt-4 text-lg text-warm-gray">
-            Your first class is free. No experience needed. Just show up,
-            and we&apos;ll take care of the rest.
-          </p>
-          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link
-              href="/booking"
-              className={cn(buttonVariants({ variant: "primary", size: "xl" }))}
-            >
-              Book Your Free Class
-            </Link>
-            <Link
-              href="/getting-started"
-              className={cn(buttonVariants({ variant: "ghost", size: "xl" }))}
-            >
-              Not sure? Read our beginner guide →
-            </Link>
-          </div>
-        </div>
-      </AnimatedReveal>
-    </Section>
+    <section className="bg-charcoal py-24 lg:py-36 overflow-hidden relative">
+      {/* Animated accent blob */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div
+          className="w-[60vw] h-[60vw] rounded-full opacity-[0.03] animate-float"
+          style={{ background: "radial-gradient(circle, #D4FF4E 0%, transparent 70%)" }}
+        />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="font-[family-name:var(--font-caveat)] text-sand/40 text-xl mb-6"
+        >
+          the only thing missing is you
+        </motion.p>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 32 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.05 }}
+          className="font-[family-name:var(--font-bebas)] uppercase leading-none text-off-white"
+          style={{ fontSize: "clamp(3.5rem, 11vw, 11rem)" }}
+        >
+          Start your
+          <br />
+          <span className="text-electric">practice.</span>
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="mt-6 text-sand/50 text-lg max-w-md mx-auto"
+        >
+          No experience needed. Just show up. We&apos;ll take care of the rest.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4 }}
+          className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
+        >
+          <Link
+            href="/booking"
+            className="inline-flex items-center justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-10 py-5 tracking-wide uppercase hover:bg-electric-dark transition-all duration-200 hover:scale-[1.02]"
+          >
+            Book a Class
+          </Link>
+          <Link
+            href="/getting-started"
+            className="text-sand/40 text-sm hover:text-sand/80 transition-colors"
+          >
+            First time? Read the beginner guide →
+          </Link>
+        </motion.div>
+
+        {/* Small trust signals */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6 }}
+          className="mt-12 flex items-center justify-center gap-8 text-sand/20 text-xs tracking-widest uppercase"
+        >
+          <span>Small groups</span>
+          <span className="text-electric/40">✦</span>
+          <span>All levels welcome</span>
+          <span className="text-electric/40">✦</span>
+          <span>Just show up</span>
+        </motion.div>
+      </div>
+    </section>
   );
 }

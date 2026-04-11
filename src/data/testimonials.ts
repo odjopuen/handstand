@@ -27,7 +27,7 @@ export const testimonials: Testimonial[] = [
     id: "2",
     studentName: "James K.",
     quote:
-      "After a year of trying on my own, I was stuck. Two months of classes here and I finally found my balance. The coaching eye is unreal — 15 years of experience really shows.",
+      "After a year of trying on my own, I was stuck. Two months of classes here and I finally found my balance. The coaching eye is unreal — you can feel the depth of the practice immediately.",
     level: "intermediate",
     duration: "6 months",
     achievement: "Consistent 20-second holds",

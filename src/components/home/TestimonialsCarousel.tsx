@@ -1,93 +1,101 @@
 "use client";
 
-import { useState } from "react";
-import { Section } from "@/components/layout/Section";
-import { SectionHeading } from "@/components/shared/SectionHeading";
-import { AnimatedReveal } from "@/components/shared/AnimatedReveal";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { testimonials } from "@/data/testimonials";
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 export function TestimonialsCarousel() {
   const featured = testimonials.filter((t) => t.featured);
   const [current, setCurrent] = useState(0);
 
-  const next = () => setCurrent((prev) => (prev + 1) % featured.length);
-  const prev = () =>
-    setCurrent((p) => (p - 1 + featured.length) % featured.length);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % featured.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, [featured.length]);
 
-  const testimonial = featured[current];
+  const t = featured[current];
 
   return (
-    <Section background="cream">
-      <SectionHeading
-        title="What Students Say"
-        subtitle="Real stories from real practitioners"
-      />
+    <section className="bg-charcoal py-24 lg:py-36 overflow-hidden relative">
+      {/* Big background quote mark */}
+      <div
+        className="absolute top-8 left-6 font-[family-name:var(--font-dm-serif)] text-electric/10 leading-none select-none pointer-events-none"
+        style={{ fontSize: "clamp(8rem, 20vw, 18rem)" }}
+      >
+        &ldquo;
+      </div>
 
-      <AnimatedReveal>
-        <div className="mx-auto max-w-3xl">
-          <div className="relative rounded-2xl bg-off-white p-8 shadow-[var(--shadow-lg)] sm:p-12">
-            <Quote className="absolute top-6 left-6 h-10 w-10 text-primary/10 sm:h-14 sm:w-14" />
+      <div className="max-w-5xl mx-auto px-6 relative z-10">
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="font-[family-name:var(--font-caveat)] text-sand/40 text-lg mb-10"
+        >
+          what students say
+        </motion.p>
 
-            <blockquote className="relative z-10">
-              <p className="text-lg leading-relaxed text-charcoal sm:text-xl">
-                &ldquo;{testimonial.quote}&rdquo;
+        {/* Testimonial */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={current}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+          >
+            <blockquote>
+              <p
+                className="font-[family-name:var(--font-dm-serif)] text-off-white leading-tight"
+                style={{ fontSize: "clamp(1.5rem, 3.5vw, 2.8rem)" }}
+              >
+                &ldquo;{t.quote}&rdquo;
               </p>
 
-              <footer className="mt-6 flex items-center gap-4">
-                {/* Avatar placeholder */}
-                <div className="h-12 w-12 rounded-full bg-gradient-to-br from-primary-light to-secondary-light flex items-center justify-center">
-                  <span className="text-lg font-bold text-off-white">
-                    {testimonial.studentName.charAt(0)}
+              <footer className="mt-10 flex items-center gap-4">
+                {/* Initial avatar */}
+                <div className="h-12 w-12 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center flex-shrink-0">
+                  <span className="font-[family-name:var(--font-bebas)] text-xl text-off-white">
+                    {t.studentName.charAt(0)}
                   </span>
                 </div>
                 <div>
-                  <cite className="not-italic font-medium text-charcoal">
-                    {testimonial.studentName}
+                  <cite className="not-italic font-medium text-sand text-sm block">
+                    {t.studentName}
                   </cite>
-                  <p className="text-sm text-warm-gray">
-                    {testimonial.achievement} &middot; {testimonial.duration}
-                  </p>
+                  {t.achievement && (
+                    <p className="text-electric text-xs mt-0.5">
+                      ✦ {t.achievement}
+                    </p>
+                  )}
                 </div>
               </footer>
             </blockquote>
+          </motion.div>
+        </AnimatePresence>
 
-            {/* Navigation */}
-            <div className="mt-8 flex items-center justify-center gap-4">
-              <button
-                onClick={prev}
-                className="rounded-full border border-warm-gray/20 p-2 text-warm-gray transition-colors hover:border-primary hover:text-primary"
-                aria-label="Previous testimonial"
-              >
-                <ChevronLeft size={20} />
-              </button>
+        {/* Controls */}
+        <div className="mt-14 flex items-center gap-3">
+          {featured.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrent(i)}
+              className={`h-1.5 rounded-full transition-all duration-400 ${
+                i === current
+                  ? "w-12 bg-electric"
+                  : "w-4 bg-sand/20 hover:bg-sand/40"
+              }`}
+              aria-label={`Go to testimonial ${i + 1}`}
+            />
+          ))}
 
-              <div className="flex gap-2">
-                {featured.map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setCurrent(i)}
-                    className={`h-2 rounded-full transition-all duration-300 ${
-                      i === current
-                        ? "w-6 bg-primary"
-                        : "w-2 bg-warm-gray/30 hover:bg-warm-gray/50"
-                    }`}
-                    aria-label={`Go to testimonial ${i + 1}`}
-                  />
-                ))}
-              </div>
-
-              <button
-                onClick={next}
-                className="rounded-full border border-warm-gray/20 p-2 text-warm-gray transition-colors hover:border-primary hover:text-primary"
-                aria-label="Next testimonial"
-              >
-                <ChevronRight size={20} />
-              </button>
-            </div>
-          </div>
+          <span className="ml-auto text-sand/25 text-xs font-mono">
+            {String(current + 1).padStart(2, "0")} / {String(featured.length).padStart(2, "0")}
+          </span>
         </div>
-      </AnimatedReveal>
-    </Section>
+      </div>
+    </section>
   );
 }

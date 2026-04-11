@@ -1,62 +1,121 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/Button";
+import { motion } from "framer-motion";
 
 export function Hero() {
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => setSeconds((s) => s + 1), 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden bg-charcoal">
-      {/* Background — placeholder gradient until real video/image is added */}
-      <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal/95 to-primary-dark/30" />
+    <section className="relative min-h-screen overflow-hidden bg-charcoal">
+      {/* Grain */}
+      <div
+        className="absolute inset-0 opacity-25 pointer-events-none"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E")`,
+        }}
+      />
 
-      {/* TODO: Replace with <video> or <Image> when assets are provided */}
-      {/* Subtle pattern overlay */}
-      <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_1px_1px,_white_1px,_transparent_0)] bg-[size:40px_40px]" />
-
-      {/* Content */}
-      <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6">
-        <p className="mb-4 font-[family-name:var(--font-caveat)] text-xl text-primary-light sm:text-2xl">
-          15 years of practice. One invitation.
-        </p>
-
-        <h1 className="font-[family-name:var(--font-dm-serif)] text-4xl leading-tight text-off-white sm:text-5xl md:text-6xl lg:text-7xl">
-          Discover the Joy of
-          <br />
-          <span className="text-primary-light">Being Upside Down</span>
-        </h1>
-
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-sand/80 sm:text-xl">
-          Handstand classes in Toronto for every body. Whether you&apos;ve never
-          been upside down or you&apos;re chasing a one-arm hold — there&apos;s
-          a place for you here.
-        </p>
-
-        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <Link
-            href="/booking"
-            className={cn(
-              buttonVariants({ variant: "primary", size: "xl" })
-            )}
-          >
-            Start Your Journey
-          </Link>
-          <Link
-            href="/classes"
-            className={cn(
-              buttonVariants({ variant: "outline", size: "xl" }),
-              "border-off-white/30 text-off-white hover:bg-off-white/10 hover:text-off-white"
-            )}
-          >
-            View Schedule
-          </Link>
-        </div>
+      {/* Background watermark */}
+      <div className="absolute inset-0 flex items-center justify-center overflow-hidden select-none pointer-events-none">
+        <span
+          className="font-[family-name:var(--font-bebas)] leading-none whitespace-nowrap"
+          style={{ fontSize: "28vw", color: "rgba(255,255,255,0.022)", letterSpacing: "-0.02em" }}
+        >
+          HANDSTAND
+        </span>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="h-8 w-5 rounded-full border-2 border-off-white/30 p-1">
-          <div className="h-2 w-1.5 rounded-full bg-off-white/50 mx-auto" />
-        </div>
+      {/* Accent lines */}
+      <div className="absolute top-0 right-0 w-px h-full bg-gradient-to-b from-transparent via-white/10 to-transparent" />
+      <div className="absolute top-0 left-[60%] w-px h-full bg-gradient-to-b from-transparent via-white/5 to-transparent hidden lg:block" />
+
+      {/* Eyebrow — top left, below header */}
+      <motion.p
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="absolute top-24 left-6 right-6 z-10 font-[family-name:var(--font-caveat)] text-primary-light"
+        style={{ fontSize: "clamp(1rem, 2vw, 1.4rem)" }}
+      >
+        Deep practice. Real community. Toronto.
+      </motion.p>
+
+      {/* Giant headline — always fills viewport */}
+      <div className="absolute inset-0 flex items-center z-10 px-6 max-w-7xl mx-auto w-full" style={{ left: '50%', transform: 'translateX(-50%)' }}>
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+          className="w-full"
+        >
+          <h1 className="font-[family-name:var(--font-bebas)] uppercase leading-[0.88] tracking-tight">
+            {["Being", "Upside", "Down"].map((word, i) => (
+              <span
+                key={word}
+                className={`block ${i === 1 ? "text-outline-electric" : "text-off-white"}`}
+                style={{ fontSize: "min(15vw, 26vh)" }}
+              >
+                {word}
+              </span>
+            ))}
+          </h1>
+        </motion.div>
       </div>
+
+      {/* Bottom bar — CTAs + counter */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+        className="absolute bottom-0 left-0 right-0 z-10 px-6 pb-8 max-w-7xl mx-auto"
+        style={{ left: '50%', transform: 'translateX(-50%)' }}
+      >
+        <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+          <p className="text-sand/50 text-sm leading-relaxed max-w-xs">
+            Handstand classes for every body.<br className="hidden sm:block" />
+            Beginner to advanced.
+          </p>
+
+          <div className="flex flex-wrap gap-3 items-center">
+            <Link
+              href="/booking"
+              className="inline-flex items-center justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
+            >
+              Book a Class
+            </Link>
+            <Link
+              href="/classes"
+              className="inline-flex items-center justify-center rounded-full border border-off-white/20 text-off-white text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-off-white/10 transition-colors"
+            >
+              View Classes
+            </Link>
+            <span className="hidden lg:inline-flex items-center gap-2.5 rounded-full bg-white/[0.04] border border-white/[0.07] px-4 py-2.5 ml-2">
+              <span className="animate-pulse-dot inline-block h-1.5 w-1.5 rounded-full bg-electric" />
+              <span className="text-sand/35 text-xs">
+                <span className="font-[family-name:var(--font-bebas)] text-electric text-base tracking-wide">{seconds}s</span>
+                {" "}upside down
+              </span>
+            </span>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Location */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.4 }}
+        className="absolute top-24 right-6 z-10 text-xs text-sand/20 tracking-widest uppercase hidden lg:block"
+      >
+        Toronto, ON
+      </motion.div>
     </section>
   );
 }

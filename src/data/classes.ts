@@ -44,7 +44,6 @@ export const classes: ClassDefinition[] = [
     ],
     image: "/images/hero/first-flight.jpg",
     isDropIn: true,
-    priceNote: "First class free for new students",
   },
   {
     id: "building-balance",

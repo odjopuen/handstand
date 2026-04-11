@@ -15,9 +15,10 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <Link
               href="/"
-              className="font-heading text-2xl text-off-white"
+              className="font-[family-name:var(--font-bebas)] text-3xl uppercase tracking-wide leading-none text-off-white"
             >
-              Inversion Therapy
+              Ground{" "}
+              <span className="text-electric">Work</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-sand/60">
               {SITE_CONFIG.description}

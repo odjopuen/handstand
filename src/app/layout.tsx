@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display, Inter, Caveat } from "next/font/google";
+import { Bebas_Neue, DM_Serif_Display, Inter, Caveat } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -10,6 +10,13 @@ import "./globals.css";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const bebasNeue = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-bebas",
   display: "swap",
 });
 
@@ -63,7 +70,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${dmSerifDisplay.variable} ${caveat.variable}`}
+      className={`${inter.variable} ${bebasNeue.variable} ${dmSerifDisplay.variable} ${caveat.variable}`}
     >
       <body className="min-h-screen font-[family-name:var(--font-inter)] antialiased">
         <JsonLd data={buildLocalBusinessSchema()} />

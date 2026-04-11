@@ -32,6 +32,9 @@ yarn-error.log*
 .env
 .env*.local
 
+# Dropbox downloaded media — local only, not committed
+/public/images/_dropbox/
+
 # vercel
 .vercel
 
