@@ -96,8 +96,8 @@ export function Hero() {
       >
         <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <p className="text-sand/50 text-sm leading-relaxed max-w-xs">
-            Handstand classes for every body.<br className="hidden sm:block" />
-            Beginner to advanced.
+            Monthly workshop. Toronto.<br className="hidden sm:block" />
+            All levels. Max 16 people.
           </p>
 
           <div className="flex flex-wrap gap-3 items-center">

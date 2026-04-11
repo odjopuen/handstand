@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const values = [
   {
     title: "Beginners first",
-    description: "Every expert was once a beginner. We never forget that, and we design every class around it.",
+    description: "Every expert was once a beginner. We never forget that, and we design every session around it.",
   },
   {
     title: "Progress, not perfection",
@@ -167,7 +167,7 @@ export default function AboutPage() {
           href="/booking"
           className="inline-flex items-center justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-10 py-5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
         >
-          Book a Class
+          Sign Up for the Workshop
         </a>
       </section>
     </>

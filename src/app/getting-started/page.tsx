@@ -10,7 +10,7 @@ const steps = [
   {
     number: "01",
     title: "No experience needed",
-    description: "Seriously. We start from zero. If you can put your hands on the floor, you have everything required for First Flight. We've taught complete beginners, people who haven't exercised in years, and everyone in between.",
+    description: "Seriously. We start from zero. If you can put your hands on the floor, you have everything you need. We've welcomed complete beginners, people who haven't exercised in years, and everyone in between.",
   },
   {
     number: "02",
@@ -63,7 +63,7 @@ export default function GettingStartedPage() {
             <span className="text-outline-electric">here.</span>
           </h1>
           <p className="mt-8 text-sand/60 text-lg max-w-lg leading-relaxed">
-            Everything you need to know before your first class. Spoiler: it&apos;s less scary than you think.
+            Everything you need to know before your first workshop. Spoiler: it&apos;s less scary than you think.
           </p>
         </div>
       </section>

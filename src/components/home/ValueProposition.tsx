@@ -14,7 +14,7 @@ const pillars = [
     number: "02",
     title: "Disciplined Progression",
     description:
-      "Real progress comes from consistent, intentional practice. Every class builds on the last with clear structure and purpose.",
+      "Real progress comes from showing up consistently. Every workshop builds on where you left off — with clear structure and real progression.",
     accent: "text-primary-light",
   },
   {
