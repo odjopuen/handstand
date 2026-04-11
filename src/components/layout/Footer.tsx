@@ -21,7 +21,7 @@ export function Footer() {
               <span className="text-electric">Work</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-sand/60">
-              {SITE_CONFIG.description}
+              Monthly handstand workshop in Toronto. All levels. Small groups. Rotating locations.
             </p>
             <SocialLinks className="mt-6" />
           </div>
@@ -60,13 +60,13 @@ export function Footer() {
                 href="/classes"
                 className="text-sm text-sand/60 transition-colors hover:text-primary-light"
               >
-                View Classes
+                The Workshop
               </Link>
               <Link
                 href="/booking"
                 className="text-sm text-sand/60 transition-colors hover:text-primary-light"
               >
-                Book Your First Class
+                Sign Up for the Workshop
               </Link>
               <Link
                 href="/blog"

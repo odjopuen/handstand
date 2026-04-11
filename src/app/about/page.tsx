@@ -4,7 +4,7 @@ import { Marquee } from "@/components/home/Marquee";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "The story behind Toronto's most welcoming handstand community.",
+  description: "Ground Work is run by Jonny — 15 years of handstand practice, a community-first teaching philosophy, and a deep belief that patience is the real skill.",
 };
 
 

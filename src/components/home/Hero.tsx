@@ -105,13 +105,13 @@ export function Hero() {
               href="/booking"
               className="inline-flex items-center justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
             >
-              Book a Class
+              Sign Up for Workshop
             </Link>
             <Link
               href="/classes"
               className="inline-flex items-center justify-center rounded-full border border-off-white/20 text-off-white text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-off-white/10 transition-colors"
             >
-              View Classes
+              The Workshop
             </Link>
             <span className="hidden lg:inline-flex items-center gap-2.5 rounded-full bg-white/[0.04] border border-white/[0.07] px-4 py-2.5 ml-2">
               <span className="animate-pulse-dot inline-block h-1.5 w-1.5 rounded-full bg-electric" />

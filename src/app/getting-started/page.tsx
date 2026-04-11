@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Getting Started",
-  description: "New to handstands? Everything you need to know before your first class.",
+  description: "New to handstands? No experience needed. Here's everything you need to know before your first Ground Work workshop in Toronto.",
 };
 
 const steps = [
@@ -14,8 +14,8 @@ const steps = [
   },
   {
     number: "02",
-    title: "Book your first class",
-    description: "Pick First Flight from the schedule. Just show up and see if it's for you.",
+    title: "Sign up for the next workshop",
+    description: "One monthly workshop, rotating Toronto locations. Check the booking page for the next date and grab a spot on Luma. Max 16 people — spots go fast.",
   },
   {
     number: "03",
@@ -35,7 +35,7 @@ const steps = [
   {
     number: "06",
     title: "Keep coming back",
-    description: "One class plants the seed. Consistent practice makes it grow. Two sessions a week is the sweet spot — though even once a week will change what your body can do.",
+    description: "One workshop plants the seed. Consistent practice makes it grow. The handstand is not a trick you learn once — it's a conversation you keep having with your body. Show up every month and watch what happens.",
   },
 ];
 
@@ -137,7 +137,7 @@ export default function GettingStartedPage() {
           href="/booking"
           className="inline-flex items-center justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-10 py-5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
         >
-          Book My First Class
+          Sign Up for the Next Workshop
         </Link>
       </section>
     </>

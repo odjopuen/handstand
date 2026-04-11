@@ -117,8 +117,8 @@ export default function ContactPage() {
                     <p className="text-warm-gray">Toronto, Ontario, Canada</p>
                   </div>
                   <div>
-                    <p className="text-xs font-medium text-charcoal uppercase tracking-wide mb-1">Classes</p>
-                    <p className="text-warm-gray">Saturday 10:00 AM – 12:00 PM</p>
+                    <p className="text-xs font-medium text-charcoal uppercase tracking-wide mb-1">Workshop</p>
+                    <p className="text-warm-gray">Monthly — rotating Toronto locations</p>
                   </div>
                   <div>
                     <p className="text-xs font-medium text-charcoal uppercase tracking-wide mb-1">Response time</p>
@@ -132,7 +132,7 @@ export default function ContactPage() {
                   Quickest way in?
                 </p>
                 <p className="font-[family-name:var(--font-dm-serif)] text-xl text-charcoal mb-4">
-                  Just book a class.
+                  Just come to a workshop.
                 </p>
                 <p className="text-warm-gray text-sm mb-5">
                   Meet us in person. Ask your questions. Try it out. No obligation.
@@ -141,7 +141,7 @@ export default function ContactPage() {
                   href="/booking"
                   className="inline-flex items-center justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
                 >
-                  Book a Class
+                  Sign Up for the Workshop
                 </a>
               </div>
             </div>

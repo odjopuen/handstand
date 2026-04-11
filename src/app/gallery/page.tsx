@@ -79,7 +79,7 @@ export default function GalleryPage() {
               href="/booking"
               className="inline-flex items-center justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-10 py-4 tracking-wide uppercase hover:bg-electric-dark transition-colors"
             >
-              Book Your First Class
+              Sign Up for the Next Workshop
             </Link>
           </div>
         </div>

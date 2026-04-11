@@ -1,9 +1,9 @@
 export const SITE_CONFIG = {
   name: "Ground Work",
-  tagline: "Handstand Practice for Every Body",
+  tagline: "Toronto Handstand Community",
   description:
-    "Discover the joy of handstands with Toronto's most welcoming practice community. Classes for complete beginners to advanced practitioners.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://groundwork.ca",
+    "Ground Work is a monthly handstand workshop in Toronto. All levels welcome. Small groups, real coaching, rotating locations across the city.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://groundworkto.com",
   ogImage: "/images/og/default.jpg",
   creator: "Ground Work",
   locale: "en_CA",
@@ -20,16 +20,8 @@ export const BUSINESS_INFO = {
   },
   phone: "", // TODO: Add phone number
   email: "", // TODO: Add contact email
-  hours: {
-    // TODO: Update with actual hours
-    monday: "Closed",
-    tuesday: "Closed",
-    wednesday: "Closed",
-    thursday: "Closed",
-    friday: "Closed",
-    saturday: "10:00 AM – 12:00 PM",
-    sunday: "Closed",
-  },
+  // Monthly workshop — no fixed weekly schedule. Location announced per event.
+  workshopSchedule: "Monthly, rotating Toronto locations",
   social: {
     instagram: "", // TODO: Add social links
     youtube: "",
