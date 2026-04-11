@@ -39,7 +39,7 @@ export const BUSINESS_INFO = {
 
 export const NAV_LINKS = [
   { label: "About", href: "/about" },
-  { label: "Classes", href: "/classes" },
+  { label: "Workshop", href: "/classes" },
   { label: "Getting Started", href: "/getting-started" },
   { label: "Blog", href: "/blog" },
   { label: "Gallery", href: "/gallery" },

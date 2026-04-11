@@ -35,6 +35,16 @@ yarn-error.log*
 # Dropbox downloaded media — local only, not committed
 /public/images/_dropbox/
 
+# Claude Code local settings (may contain tokens/MCP config)
+.claude/
+
+# Playwright browser automation (local only)
+.playwright-mcp/
+
+# Screenshots taken during development
+*.jpeg
+*.png
+
 # vercel
 .vercel
 

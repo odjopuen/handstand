@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 const stats = [
   { value: 15, suffix: "", label: "Years practicing", note: "of handstand obsession" },
-  { value: 3, suffix: "", label: "Class formats", note: "beginner to advanced" },
-  { value: 12, suffix: "", label: "Max per class", note: "actual attention, not crowds" },
+  { value: 1, suffix: "", label: "Monthly class", note: "rotating Toronto locations" },
+  { value: 16, suffix: "", label: "Max per workshop", note: "actual attention, not crowds" },
   { value: 100, suffix: "%", label: "Worth showing up", note: "every single session" },
 ];
 

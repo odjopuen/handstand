@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Marquee } from "@/components/home/Marquee";
 
 export const metadata: Metadata = {
@@ -6,14 +7,6 @@ export const metadata: Metadata = {
   description: "The story behind Toronto's most welcoming handstand community.",
 };
 
-const timeline = [
-  { year: "2010", event: "First handstand attempt in a park. Fell immediately. Came back the next day." },
-  { year: "2013", event: "First competition — finished last, learned everything." },
-  { year: "2016", event: "Started teaching privately. One student became ten." },
-  { year: "2019", event: "Opened the first community class. Sold out in 48 hours." },
-  { year: "2022", event: "Grew to three class formats. 500+ practitioners trained." },
-  { year: "Now", event: "Still learning. Still teaching. Still loving every second upside down." },
-];
 
 const values = [
   {
@@ -60,6 +53,18 @@ export default function AboutPage() {
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 items-start">
             {/* Left */}
             <div>
+              {/* Jonny photo */}
+              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-10">
+                <Image
+                  src="/images/site/jonny-coaching.jpg"
+                  alt="Jonny coaching a handstand class"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-charcoal/20" />
+              </div>
+
               <h2
                 className="font-[family-name:var(--font-bebas)] text-charcoal uppercase leading-none mb-8"
                 style={{ fontSize: "clamp(2.5rem, 6vw, 6rem)" }}
@@ -97,34 +102,53 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline */}
+      {/* The Practice */}
       <section className="bg-sand py-24 lg:py-32">
         <div className="max-w-5xl mx-auto px-6">
-          <p className="font-[family-name:var(--font-caveat)] text-warm-gray text-lg mb-4">the journey</p>
+          <p className="font-[family-name:var(--font-caveat)] text-warm-gray text-lg mb-4">the practice</p>
           <h2
             className="font-[family-name:var(--font-bebas)] text-charcoal uppercase leading-none mb-16"
             style={{ fontSize: "clamp(2.5rem, 6vw, 6rem)" }}
           >
-            How we got here
+            Patience is<br />
+            <span className="text-outline-charcoal">the skill</span>
           </h2>
 
-          <div className="relative">
-            {/* Vertical line */}
-            <div className="absolute left-0 top-0 bottom-0 w-px bg-warm-gray/20 ml-[3.5rem]" />
-
-            <div className="space-y-10">
-              {timeline.map((item) => (
-                <div key={item.year} className="flex gap-8 items-start">
-                  <div className="flex-shrink-0 w-28 text-right">
-                    <span className="font-[family-name:var(--font-bebas)] text-4xl text-electric">
-                      {item.year}
-                    </span>
-                  </div>
-                  <div className="flex-shrink-0 w-3 h-3 rounded-full bg-electric mt-3 ring-4 ring-sand" />
-                  <p className="text-warm-gray leading-relaxed pt-1">{item.event}</p>
-                </div>
-              ))}
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
+            <div className="space-y-6 text-warm-gray leading-relaxed">
+              <p>
+                A handstand doesn&apos;t happen in a single session. It doesn&apos;t happen after ten. It happens slowly — in the quiet accumulation of showing up, falling, adjusting, and showing up again.
+              </p>
+              <p>
+                What most people don&apos;t expect is how much of it is listening. Listening to where your weight wants to go. Feeling which finger is gripping too hard and which isn&apos;t gripping enough. Noticing the tiny shift in your hips that sends everything sideways.
+              </p>
+              <p>
+                That process — of learning to read your own body with precision — is what makes the handstand one of the most honest practices there is. You can&apos;t fake it. You can&apos;t rush it. You just have to keep coming back.
+              </p>
             </div>
+
+            <div className="space-y-6 text-warm-gray leading-relaxed">
+              <p>
+                This is why consistency matters more than intensity. One session a week, every week, will take you further than ten sessions in a month followed by a long break. The nervous system needs repetition. The body needs time to integrate what it learned.
+              </p>
+              <p>
+                Progress rarely looks like progress when you&apos;re in it. Then one day you kick up and something feels different — quieter, more stable — and you realise the months of practice were working the whole time.
+              </p>
+              <p className="font-[family-name:var(--font-dm-serif)] text-charcoal text-lg italic">
+                That&apos;s the part I love most. Teaching people to trust the process when they can&apos;t yet see the result.
+              </p>
+            </div>
+          </div>
+
+          {/* Pullquote */}
+          <div className="mt-16 pt-16 border-t border-warm-gray/15">
+            <p
+              className="font-[family-name:var(--font-bebas)] text-charcoal uppercase leading-tight"
+              style={{ fontSize: "clamp(1.8rem, 4vw, 3.5rem)" }}
+            >
+              &ldquo;The handstand is not a trick you learn —<br className="hidden lg:block" />
+              <span className="text-electric"> it&apos;s a conversation you keep having with your body.&rdquo;</span>
+            </p>
           </div>
         </div>
       </section>

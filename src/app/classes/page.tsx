@@ -1,115 +1,230 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { classes } from "@/data/classes";
-import { Clock, Users, ArrowRight } from "lucide-react";
+import { Calendar, MapPin, Users, ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Classes",
-  description: "Handstand classes in Toronto for every level — from complete beginners to advanced practitioners.",
+  title: "Workshop",
+  description: "A monthly handstand workshop in Toronto. All levels welcome. Community-first, rotating locations.",
 };
 
-const levelColors: Record<string, string> = {
-  beginner: "bg-secondary/20 text-secondary border-secondary/20",
-  intermediate: "bg-primary/20 text-primary border-primary/20",
-  advanced: "bg-electric/20 text-charcoal border-electric/30",
-  "all-levels": "bg-dusty-blue/20 text-dusty-blue border-dusty-blue/20",
+// ── Update these each month ───────────────────────────────────────────────────
+const NEXT_WORKSHOP = {
+  date: "April 25, 2026",
+  location: "Toronto — location shared on sign-up",
+  spotsLeft: 16,
 };
+const LUMA_EVENT_URL = "https://luma.com/uoopsxfs";
+// ─────────────────────────────────────────────────────────────────────────────
 
-const levelLabels: Record<string, string> = {
-  beginner: "Beginner",
-  intermediate: "Intermediate",
-  advanced: "Advanced",
-  "all-levels": "All Levels",
-};
+const whatToExpect = [
+  {
+    heading: "Everyone helps everyone",
+    body: "This isn't a class where you watch an instructor and copy. People spot each other, share what's working, cheer when someone nails something. The group makes the session.",
+  },
+  {
+    heading: "All levels, genuinely",
+    body: "First time ever trying? You'll fit right in. Been practising for years? You'll still get something out of it. The workshop is structured so there's always something useful for wherever you're at.",
+  },
+  {
+    heading: "Location rotates every month",
+    body: "Each workshop happens somewhere different around Toronto. Address goes out to everyone who's signed up, a few days before. Part of the fun is discovering new spaces.",
+  },
+  {
+    heading: "Small group, real attention",
+    body: "Max 12 people per session. Not because of capacity — because that's the right number for people to actually get coached, not just watched.",
+  },
+];
 
-export default function ClassesPage() {
+export default function WorkshopPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-charcoal pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden">
+      <section className="bg-charcoal pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden relative">
         <div className="max-w-7xl mx-auto px-6">
           <p className="font-[family-name:var(--font-caveat)] text-primary-light text-xl mb-4">
-            Find your level
+            monthly community workshop
           </p>
           <h1
             className="font-[family-name:var(--font-bebas)] text-off-white uppercase leading-none mb-8"
             style={{ fontSize: "clamp(4rem, 12vw, 11rem)" }}
           >
-            Our{" "}
-            <span className="text-outline-electric">classes</span>
+            The{" "}
+            <span className="text-outline-electric">Workshop</span>
           </h1>
           <p className="text-sand/50 text-lg max-w-lg leading-relaxed">
-            Three formats, one goal — to get you more comfortable, more capable, and more confident upside down.
+            Once a month, a group gathers somewhere in Toronto to work on handstands together. All levels. No ego. Just practice.
           </p>
         </div>
       </section>
 
-      {/* Classes grid */}
-      <section className="bg-off-white py-24">
+      {/* Next date + photo */}
+      <section className="bg-off-white py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid gap-6 lg:grid-cols-3">
-            {classes.map((cls, i) => (
-              <Link key={cls.id} href={`/classes/${cls.slug}`} className="group block">
-                <div className="border border-warm-gray/10 rounded-2xl overflow-hidden hover:border-primary/30 transition-colors card-hover">
-                  {/* Image area */}
-                  <div className="h-56 bg-gradient-to-br from-charcoal to-warm-gray/30 relative flex items-end p-6">
-                    <span
-                      className="absolute top-4 right-5 font-[family-name:var(--font-bebas)] text-[6rem] leading-none text-white/[0.06] select-none"
-                    >
-                      0{i + 1}
-                    </span>
-                    <span className={`text-xs px-3 py-1 rounded-full border ${levelColors[cls.level]} font-medium`}>
-                      {levelLabels[cls.level]}
-                    </span>
-                  </div>
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
 
-                  {/* Body */}
-                  <div className="p-6 lg:p-8">
-                    <h2 className="font-[family-name:var(--font-bebas)] text-3xl text-charcoal uppercase tracking-wide group-hover:text-primary transition-colors">
-                      {cls.title}
-                    </h2>
-                    <p className="mt-2 text-warm-gray text-sm leading-relaxed">
-                      {cls.shortDescription}
-                    </p>
+            {/* Photo */}
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <Image
+                src="/images/site/hero-bg.jpg"
+                alt="Ground Work handstand workshop"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-charcoal/25" />
+            </div>
 
-                    <div className="mt-6 flex items-center gap-6 text-xs text-warm-gray/70">
-                      <span className="flex items-center gap-1.5">
-                        <Clock size={12} />
-                        {cls.durationMinutes} min
-                      </span>
-                      <span className="flex items-center gap-1.5">
-                        <Users size={12} />
-                        Max {cls.maxParticipants} people
-                      </span>
-                    </div>
+            {/* Next date info */}
+            <div>
+              <p className="font-[family-name:var(--font-caveat)] text-warm-gray text-lg mb-4">
+                next workshop
+              </p>
+              <p
+                className="font-[family-name:var(--font-bebas)] text-charcoal uppercase leading-none mb-8"
+                style={{ fontSize: "clamp(3rem, 8vw, 7rem)" }}
+              >
+                April <span className="text-electric">25</span>
+              </p>
 
-                    <div className="mt-5 flex items-center gap-2 text-primary text-sm font-medium">
-                      See full details <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </div>
+              <div className="space-y-3 mb-10">
+                <div className="flex items-center gap-3 text-warm-gray">
+                  <Calendar size={16} className="text-electric flex-shrink-0" />
+                  <span>{NEXT_WORKSHOP.date}</span>
                 </div>
-              </Link>
+                <div className="flex items-center gap-3 text-warm-gray">
+                  <MapPin size={16} className="text-electric flex-shrink-0" />
+                  <span>{NEXT_WORKSHOP.location}</span>
+                </div>
+                <div className="flex items-center gap-3 text-warm-gray">
+                  <Users size={16} className="text-electric flex-shrink-0" />
+                  <span>Max {NEXT_WORKSHOP.spotsLeft} people</span>
+                </div>
+              </div>
+
+              <a
+                href={LUMA_EVENT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-10 py-5 tracking-wide uppercase hover:bg-electric-dark transition-all duration-200 hover:scale-[1.02]"
+              >
+                Sign up for April 25
+                <ArrowUpRight size={16} />
+              </a>
+
+              <p className="mt-4 text-warm-gray/50 text-xs">
+                Spots are limited. Waitlist available if full.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What to expect */}
+      <section className="bg-sand py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6">
+          <p className="font-[family-name:var(--font-caveat)] text-warm-gray text-lg mb-4">
+            what it&apos;s like
+          </p>
+          <h2
+            className="font-[family-name:var(--font-bebas)] text-charcoal uppercase leading-none mb-16"
+            style={{ fontSize: "clamp(2.5rem, 6vw, 6rem)" }}
+          >
+            What to expect
+          </h2>
+
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {whatToExpect.map((item, i) => (
+              <div key={i} className="space-y-3">
+                <span className="font-[family-name:var(--font-bebas)] text-electric text-3xl block">
+                  0{i + 1}
+                </span>
+                <h3 className="font-[family-name:var(--font-dm-serif)] text-lg text-charcoal">
+                  {item.heading}
+                </h3>
+                <p className="text-warm-gray text-sm leading-relaxed">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Community photos */}
+      <section className="bg-charcoal py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6">
+          <p className="font-[family-name:var(--font-caveat)] text-sand/40 text-lg mb-12">
+            from the last workshop
+          </p>
+          <div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
+            {[
+              "/images/site/class-foundations.jpg",
+              "/images/site/class-progression.jpg",
+              "/images/site/class-community.jpg",
+              "/images/site/partner-work.jpg",
+              "/images/site/floor-work.jpg",
+              "/images/site/jonny-coaching.jpg",
+            ].map((src, i) => (
+              <div key={i} className={`relative rounded-xl overflow-hidden ${i === 0 ? "aspect-[4/3] lg:col-span-2" : "aspect-square"}`}>
+                <Image
+                  src={src}
+                  alt="Workshop photo"
+                  fill
+                  className="object-cover object-center hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-charcoal/20" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-off-white py-24 lg:py-32">
+        <div className="max-w-3xl mx-auto px-6">
+          <h2 className="font-[family-name:var(--font-dm-serif)] text-2xl text-charcoal mb-10">
+            Common questions
+          </h2>
+          <div className="space-y-8">
+            {[
+              {
+                q: "Do I need any experience?",
+                a: "None at all. The workshop is genuinely all-levels — beginners are just as welcome as people who've been practising for years. You'll find your place.",
+              },
+              {
+                q: "What should I wear?",
+                a: "Comfortable athletic clothing you can move freely in. Bare feet or grip socks work best on the mat. No shoes.",
+              },
+              {
+                q: "How do I find out the location?",
+                a: "Once you've signed up, the address is sent out a few days before the workshop. Locations rotate every month — usually gyms, studios, or other interesting Toronto spaces.",
+              },
+              {
+                q: "What if it's full?",
+                a: "Join the waitlist on Luma — you'll be notified automatically if a spot opens. Spots do come up.",
+              },
+              {
+                q: "Can I bring someone?",
+                a: "Yes — just have them sign up separately so they have their own confirmed spot.",
+              },
+            ].map((item) => (
+              <div key={item.q} className="border-b border-warm-gray/10 pb-8 last:border-0">
+                <h3 className="font-medium text-charcoal mb-2">{item.q}</h3>
+                <p className="text-warm-gray text-sm leading-relaxed">{item.a}</p>
+              </div>
             ))}
           </div>
 
-          {/* FAQ strip */}
-          <div className="mt-20 rounded-3xl bg-sand p-10 lg:p-14">
-            <h2 className="font-[family-name:var(--font-dm-serif)] text-2xl text-charcoal mb-8">
-              Common questions
-            </h2>
-            <div className="grid gap-6 lg:grid-cols-2">
-              {[
-                { q: "Do I need any experience?", a: "Absolutely not. First Flight is designed for complete beginners — no handstand background required." },
-                { q: "What should I wear?", a: "Comfortable athletic clothing you can move freely in. Bare feet or grip socks work best." },
-                { q: "How often should I come?", a: "Once a week is a great start. Twice a week is where you'll see real momentum build." },
-                { q: "What if I don't know which class to pick?", a: "Start with First Flight if you're new to handstands. Not sure? Just reach out — we'll point you in the right direction." },
-              ].map((item) => (
-                <div key={item.q} className="space-y-2">
-                  <h3 className="font-medium text-charcoal text-sm">{item.q}</h3>
-                  <p className="text-warm-gray text-sm leading-relaxed">{item.a}</p>
-                </div>
-              ))}
-            </div>
+          <div className="mt-12">
+            <a
+              href={LUMA_EVENT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-10 py-5 tracking-wide uppercase hover:bg-electric-dark transition-all duration-200 hover:scale-[1.02]"
+            >
+              Sign up for April 25
+              <ArrowUpRight size={16} />
+            </a>
           </div>
         </div>
       </section>

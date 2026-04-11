@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/ui/Container";
 import { buttonVariants } from "@/components/ui/Button";
@@ -10,6 +11,8 @@ import { MobileMenu } from "./MobileMenu";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHomepage = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +21,12 @@ export function Header() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // On the homepage hero (dark bg), "Ground" should be off-white when not scrolled.
+  // On all other pages the area behind the header is white, so use charcoal.
+  const logoColor = scrolled || !isHomepage
+    ? "var(--color-charcoal)"
+    : "var(--color-off-white)";
 
   return (
     <header
@@ -33,7 +42,7 @@ export function Header() {
           <Link
             href="/"
             className="font-[family-name:var(--font-bebas)] text-2xl uppercase leading-none tracking-wide transition-colors hover:text-primary lg:text-3xl"
-            style={{ color: scrolled ? "var(--color-charcoal)" : "var(--color-off-white)" }}
+            style={{ color: logoColor }}
           >
             Ground{" "}
             <span className="text-electric">Work</span>
@@ -49,7 +58,7 @@ export function Header() {
                 "hidden lg:inline-flex"
               )}
             >
-              Book a Class
+              Join Workshop
             </Link>
             <MobileMenu />
           </div>

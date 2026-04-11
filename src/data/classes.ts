@@ -14,6 +14,7 @@ export interface ClassDefinition {
   whatYoullLearn: string[];
   image: string;
   isDropIn: boolean;
+  isActive: boolean;
   priceNote?: string;
 }
 
@@ -44,6 +45,7 @@ export const classes: ClassDefinition[] = [
     ],
     image: "/images/hero/first-flight.jpg",
     isDropIn: true,
+    isActive: true,
   },
   {
     id: "building-balance",
@@ -74,6 +76,7 @@ export const classes: ClassDefinition[] = [
     ],
     image: "/images/hero/building-balance.jpg",
     isDropIn: true,
+    isActive: false,
   },
   {
     id: "inversions-lab",
@@ -104,5 +107,6 @@ export const classes: ClassDefinition[] = [
     ],
     image: "/images/hero/inversions-lab.jpg",
     isDropIn: false,
+    isActive: false,
   },
 ];

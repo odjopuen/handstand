@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function Hero() {
   const [seconds, setSeconds] = useState(0);
@@ -14,9 +15,25 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen overflow-hidden bg-charcoal">
+      {/* Photo background */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/site/hero-bg.jpg"
+          alt=""
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        {/* Dark overlay — keeps text readable, keeps brand charcoal feel */}
+        <div className="absolute inset-0 bg-charcoal/72" />
+        {/* Bottom fade to charcoal */}
+        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-charcoal to-transparent" />
+      </div>
+
       {/* Grain */}
       <div
-        className="absolute inset-0 opacity-25 pointer-events-none"
+        className="absolute inset-0 opacity-20 pointer-events-none"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E")`,
         }}
