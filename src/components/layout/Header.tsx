@@ -22,9 +22,10 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // On the homepage hero (dark bg), "Ground" should be off-white when not scrolled.
-  // On all other pages the area behind the header is white, so use charcoal.
-  const logoColor = scrolled || !isHomepage
+  // All pages have a dark charcoal hero at the top, so use off-white when the
+  // header is transparent (not scrolled). Switch to charcoal once the header
+  // gains its light background on scroll.
+  const logoColor = scrolled
     ? "var(--color-charcoal)"
     : "var(--color-off-white)";
 
