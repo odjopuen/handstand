@@ -24,15 +24,15 @@ export function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-charcoal/95 backdrop-blur-md shadow-[var(--shadow-sm)]"
-          : "bg-gradient-to-b from-black/50 to-transparent"
+          ? "bg-off-white/95 backdrop-blur-md shadow-[var(--shadow-sm)]"
+          : "bg-transparent"
       )}
     >
       <Container>
         <div className="flex h-16 items-center justify-between lg:h-20">
           <Link
             href="/"
-            className="font-[family-name:var(--font-bebas)] text-2xl uppercase leading-none tracking-wide text-off-white hover:text-primary lg:text-3xl"
+            className="font-[family-name:var(--font-bebas)] text-2xl uppercase leading-none tracking-wide text-charcoal hover:opacity-80 lg:text-3xl"
           >
             Ground{" "}
             <span className="text-electric">Work</span>
