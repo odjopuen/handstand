@@ -69,7 +69,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en-CA"
       className={`${inter.variable} ${bebasNeue.variable} ${dmSerifDisplay.variable} ${caveat.variable}`}
     >
       <body className="min-h-screen font-[family-name:var(--font-inter)] antialiased">

@@ -1,8 +1,8 @@
 export const SITE_CONFIG = {
   name: "Ground Work",
-  tagline: "Toronto Handstand Community",
+  tagline: "Toronto Handstand Workshop",
   description:
-    "Ground Work is a monthly handstand workshop in Toronto. All levels welcome. Small groups, real coaching, rotating locations across the city.",
+    "Ground Work is a monthly handstand workshop in downtown Toronto. All levels welcome. Max 16 people, two coaches. Learn to handstand in a real community.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://groundworkto.com",
   ogImage: "/images/og/default.jpg",
   creator: "Ground Work",

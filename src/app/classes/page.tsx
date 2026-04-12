@@ -5,7 +5,7 @@ import { Calendar, MapPin, Users, ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Workshop",
-  description: "A monthly handstand workshop in Toronto. All levels welcome. Community-first, rotating locations.",
+  description: "Monthly handstand workshop in downtown Toronto. All levels welcome. Two coaches, max 16 people. Book your spot and learn to handstand.",
 };
 
 // ── Update these each month ───────────────────────────────────────────────────

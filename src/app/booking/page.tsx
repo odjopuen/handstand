@@ -4,7 +4,7 @@ import { ArrowUpRight, Calendar, MapPin, Users } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Sign Up",
-  description: "Sign up for the next Ground Work handstand workshop in Toronto. Monthly, rotating locations, all levels welcome.",
+  description: "Sign up for the next Ground Work handstand workshop in downtown Toronto. Monthly, all levels, max 16 spots. Reserve your place now.",
 };
 
 // ─── UPDATE THESE each month ─────────────────────────────────────────────────

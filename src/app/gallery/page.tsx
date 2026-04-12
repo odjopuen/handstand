@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Gallery",
-  description: "Photos and videos from Ground Work classes and community moments.",
+  description: "Photos from Ground Work handstand workshops in Toronto. Real people, all levels, real progress.",
 };
 
 const photos = [
