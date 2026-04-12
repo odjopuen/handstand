@@ -22,12 +22,7 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // All pages have a dark charcoal hero at the top, so use off-white when the
-  // header is transparent (not scrolled). Switch to charcoal once the header
-  // gains its light background on scroll.
-  const logoColor = scrolled
-    ? "var(--color-charcoal)"
-    : "var(--color-off-white)";
+  const logoColor = scrolled ? "var(--color-charcoal)" : "var(--color-off-white)";
 
   return (
     <header
@@ -35,7 +30,7 @@ export function Header() {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
           ? "bg-off-white/95 backdrop-blur-md shadow-[var(--shadow-sm)]"
-          : "bg-transparent"
+          : "bg-gradient-to-b from-black/50 to-transparent"
       )}
     >
       <Container>

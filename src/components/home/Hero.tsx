@@ -27,8 +27,6 @@ export function Hero() {
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-charcoal/72" />
-        {/* Top fade — keeps header area dark so logo is always readable */}
-        <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-charcoal to-transparent" />
         {/* Bottom fade to charcoal */}
         <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-charcoal to-transparent" />
       </div>
