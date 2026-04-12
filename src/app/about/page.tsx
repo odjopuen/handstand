@@ -11,15 +11,15 @@ export const metadata: Metadata = {
 const values = [
   {
     title: "Beginners first",
-    description: "Every expert was once a beginner. We never forget that, and we design every session around it.",
+    description: "Every expert was once a beginner. Every session is designed around it.",
   },
   {
     title: "Progress, not perfection",
-    description: "The wobbles are part of the journey. We celebrate the process, not just the final hold.",
+    description: "The wobbles are part of it. We celebrate the process, not just the hold.",
   },
   {
     title: "Community over competition",
-    description: "We cheer louder for each other than we do for ourselves. That's what makes this place special.",
+    description: "We cheer louder for each other than for ourselves. That's what makes this special.",
   },
 ];
 
@@ -73,13 +73,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-5 text-warm-gray leading-relaxed">
                 <p>
-                  Handstands changed my life. Not because they made me stronger (they did), or more flexible (also true), but because they taught me what it feels like to be genuinely present.
+                  Handstands changed my life — not because they made me stronger or more flexible, but because they taught me what it means to be genuinely present.
                 </p>
                 <p>
-                  When you&apos;re upside down, balanced on your hands, there&apos;s no room for yesterday&apos;s problems or tomorrow&apos;s anxiety. There&apos;s only now. Only this breath. Only this millimetre of adjustment.
+                  When you&apos;re upside down, there&apos;s no room for yesterday&apos;s problems or tomorrow&apos;s anxiety. Only now. Only this breath. Only this millimetre of adjustment.
                 </p>
                 <p>
-                  I started teaching because I wanted more people to experience that. The joy of it. The surprise of what your body can do when you give it a chance.
+                  I started teaching because I wanted more people to feel that — the joy, the surprise of what your body can do.
                 </p>
               </div>
             </div>
@@ -120,19 +120,19 @@ export default function AboutPage() {
                 A handstand doesn&apos;t happen in a single session. It doesn&apos;t happen after ten. It happens slowly — in the quiet accumulation of showing up, falling, adjusting, and showing up again.
               </p>
               <p>
-                What most people don&apos;t expect is how much of it is listening. Listening to where your weight wants to go. Feeling which finger is gripping too hard and which isn&apos;t gripping enough. Noticing the tiny shift in your hips that sends everything sideways.
+                What most people don&apos;t expect is how much of it is listening — to where your weight wants to go, which finger grips too hard, the tiny hip shift that sends everything sideways.
               </p>
               <p>
-                That process — of learning to read your own body with precision — is what makes the handstand one of the most honest practices there is. You can&apos;t fake it. You can&apos;t rush it. You just have to keep coming back.
+                That process — learning to read your body with precision — makes the handstand one of the most honest practices there is. You can&apos;t fake it. You can&apos;t rush it.
               </p>
             </div>
 
             <div className="space-y-6 text-warm-gray leading-relaxed">
               <p>
-                This is why consistency matters more than intensity. One session a week, every week, will take you further than ten sessions in a month followed by a long break. The nervous system needs repetition. The body needs time to integrate what it learned.
+                Consistency matters more than intensity. One session a week beats ten in a month followed by a long break. The nervous system needs repetition.
               </p>
               <p>
-                Progress rarely looks like progress when you&apos;re in it. Then one day you kick up and something feels different — quieter, more stable — and you realise the months of practice were working the whole time.
+                Progress rarely looks like progress when you&apos;re in it. Then one day you kick up and something feels different — quieter, more stable — and you realise it was working the whole time.
               </p>
               <p className="font-[family-name:var(--font-dm-serif)] text-charcoal text-lg italic">
                 That&apos;s the part I love most. Teaching people to trust the process when they can&apos;t yet see the result.

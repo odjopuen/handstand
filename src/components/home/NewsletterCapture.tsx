@@ -45,7 +45,7 @@ export function NewsletterCapture() {
               transition={{ delay: 0.2 }}
               className="text-sand/50 text-sm leading-relaxed mb-8 max-w-md"
             >
-              Upcoming dates, location drops, training tips — and a place to find a practice buddy between workshops.
+              Dates, location drops, training tips — and a place to find practice buddies.
             </motion.p>
 
             <motion.a

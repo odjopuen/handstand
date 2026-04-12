@@ -100,7 +100,7 @@ export function ClassesPreview() {
               transition={{ delay: 0.15 }}
               className="text-sand/60 leading-relaxed mb-10 max-w-md"
             >
-              Once a month, a group of people get together to work on handstands. All levels. Different Toronto location every time. Everyone helps everyone.
+              Once a month, people gather to work on handstands. All levels. Everyone helps everyone.
             </motion.p>
 
             {/* Next date card */}

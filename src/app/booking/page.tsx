@@ -29,7 +29,7 @@ export default function BookingPage() {
             <span className="text-outline-electric">class</span>
           </h1>
           <p className="mt-8 text-sand/60 text-lg max-w-lg leading-relaxed">
-            Monthly community workshop, downtown Toronto. Two coaches. Max 16 people. All levels welcome.
+            Downtown Toronto. Two coaches. Max 16. All levels.
           </p>
         </div>
       </section>
@@ -53,7 +53,7 @@ export default function BookingPage() {
               {NEXT_DATE}
             </p>
             <p className="text-sand/50 text-sm leading-relaxed mb-10 max-w-sm mx-auto">
-              Sign up on Luma — you&apos;ll get a confirmation email, the location details, and a reminder before the workshop.
+              Sign up on Luma — you'll get a confirmation email, location details, and a reminder.
             </p>
             <a
               href={LUMA_EVENT_URL}
@@ -76,7 +76,7 @@ export default function BookingPage() {
               {
                 icon: <Calendar size={18} />,
                 title: "Monthly schedule",
-                body: "One class per month. Dates are announced a few weeks ahead — follow on Instagram or sign up on Luma to get notified automatically.",
+                body: "One workshop per month. Dates announced a few weeks ahead — follow on Instagram or sign up on Luma to be notified.",
               },
               {
                 icon: <MapPin size={18} />,
@@ -110,11 +110,11 @@ export default function BookingPage() {
               {[
                 {
                   q: "Do I need experience?",
-                  a: "Not at all. The monthly class is beginner-friendly. If you've never done a handstand in your life, you're exactly who this is for.",
+                  a: "Not at all. If you've never done a handstand in your life, you're exactly who this is for.",
                 },
                 {
                   q: "What should I wear?",
-                  a: "Comfortable athletic clothing you can move freely in. Bare feet or grip socks work best — no shoes on the mat.",
+                  a: "Comfortable athletic wear. Bare feet or grip socks. No shoes.",
                 },
                 {
                   q: "What if the class is full?",
@@ -122,7 +122,7 @@ export default function BookingPage() {
                 },
                 {
                   q: "Can I bring a friend?",
-                  a: "Yes — encourage them to register separately on Luma so they have their own spot confirmed.",
+                  a: "Yes — have them register separately on Luma.",
                 },
               ].map((item) => (
                 <div key={item.q}>

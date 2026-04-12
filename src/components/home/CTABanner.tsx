@@ -45,7 +45,7 @@ export function CTABanner() {
           transition={{ delay: 0.3 }}
           className="mt-6 text-sand/50 text-lg max-w-md mx-auto"
         >
-          No experience needed. Just show up. We&apos;ll take care of the rest.
+          No experience needed. Just show up.
         </motion.p>
 
         <motion.div

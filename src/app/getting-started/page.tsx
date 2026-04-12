@@ -10,32 +10,32 @@ const steps = [
   {
     number: "01",
     title: "No experience needed",
-    description: "Seriously. We start from zero. If you can put your hands on the floor, you have everything you need. We've welcomed complete beginners, people who haven't exercised in years, and everyone in between.",
+    description: "We start from zero. If you can put your hands on the floor, you're ready. We've welcomed complete beginners and people who haven't exercised in years.",
   },
   {
     number: "02",
     title: "Sign up for the next workshop",
-    description: "One monthly workshop, downtown Toronto. Check the booking page for the next date and grab a spot on Luma. Max 16 people, two coaches — spots go fast.",
+    description: "One workshop per month, downtown Toronto. Check the booking page and grab a spot on Luma. Spots go fast.",
   },
   {
     number: "03",
     title: "Wear comfortable clothes",
-    description: "Athletic wear you can move in. Bare feet or grip socks are best. We practice on mats. Bring water. Leave your ego at the door.",
+    description: "Athletic wear you can move in. Bare feet or grip socks. Bring water.",
   },
   {
     number: "04",
     title: "Arrive 10 minutes early",
-    description: "First-timers get a brief intro before class. We'll run you through what to expect, answer your questions, and make sure you feel comfortable before we start.",
+    description: "First-timers get a brief intro before we start. We'll cover what to expect and answer any questions.",
   },
   {
     number: "05",
     title: "Embrace the wobble",
-    description: "You will fall. Everyone does. That's literally how you learn. We celebrate the attempts as much as the holds — sometimes more.",
+    description: "You will fall. Everyone does — that's how you learn. We celebrate attempts as much as holds.",
   },
   {
     number: "06",
     title: "Keep coming back",
-    description: "One workshop plants the seed. Consistent practice makes it grow. The handstand is not a trick you learn once — it's a conversation you keep having with your body. Show up every month and watch what happens.",
+    description: "One workshop plants the seed. Consistent practice makes it grow. Show up every month and watch what happens.",
   },
 ];
 
@@ -43,7 +43,7 @@ const myths = [
   { myth: "You need to be strong", truth: "Technique matters far more than strength. Many beginners surprise themselves." },
   { myth: "You need to be flexible", truth: "Handstands are mostly about alignment, not flexibility. Tight hamstrings? No problem." },
   { myth: "It takes years to learn", truth: "You'll kick up against a wall in your first session. Freestanding comes faster than you think." },
-  { myth: "It's only for gymnasts", truth: "Most of our students have zero gymnastics background. It's a skill, and skills can be learned." },
+  { myth: "It's only for gymnasts", truth: "Most students have zero gymnastics background. It's a skill — skills can be learned." },
 ];
 
 export default function GettingStartedPage() {
@@ -63,7 +63,7 @@ export default function GettingStartedPage() {
             <span className="text-outline-electric">here.</span>
           </h1>
           <p className="mt-8 text-sand/60 text-lg max-w-lg leading-relaxed">
-            Everything you need to know before your first workshop. Spoiler: it&apos;s less scary than you think.
+            Everything you need to know before your first session. Less scary than you think.
           </p>
         </div>
       </section>

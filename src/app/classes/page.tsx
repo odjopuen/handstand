@@ -24,11 +24,11 @@ const whatToExpect = [
   },
   {
     heading: "All levels, genuinely",
-    body: "First time ever trying? You'll fit right in. Been practising for years? You'll still get something out of it. The workshop is structured so there's always something useful for wherever you're at.",
+    body: "First time? You'll fit right in. Been practising for years? You'll still get something out of it. There's always something useful for wherever you're at.",
   },
   {
     heading: "Downtown Toronto",
-    body: "Every workshop is in the downtown core. Exact address goes out to registered attendees a few days before — easy to get to from anywhere in the city.",
+    body: "Every workshop is in the downtown core. Exact address goes out to registered attendees a few days before.",
   },
   {
     heading: "Two coaches, sixteen people",
@@ -53,7 +53,7 @@ export default function WorkshopPage() {
             <span className="text-outline-electric">Workshop</span>
           </h1>
           <p className="text-sand/50 text-lg max-w-lg leading-relaxed">
-            Once a month, a group gathers somewhere in Toronto to work on handstands together. All levels. No ego. Just practice.
+            Once a month, a group gathers to work on handstands. All levels. No ego. Just practice.
           </p>
         </div>
       </section>
@@ -189,23 +189,23 @@ export default function WorkshopPage() {
             {[
               {
                 q: "Do I need any experience?",
-                a: "None at all. The workshop is genuinely all-levels — beginners are just as welcome as people who've been practising for years. You'll find your place.",
+                a: "None at all. Beginners are just as welcome as people who've been practising for years.",
               },
               {
                 q: "What should I wear?",
-                a: "Comfortable athletic clothing you can move freely in. Bare feet or grip socks work best on the mat. No shoes.",
+                a: "Comfortable athletic wear. Bare feet or grip socks. No shoes.",
               },
               {
                 q: "How do I find out the location?",
-                a: "Once you've signed up, the address is sent out a few days before the workshop. Locations rotate every month — usually gyms, studios, or other interesting Toronto spaces.",
+                a: "Once you've signed up, the address is sent out a few days before. Always in the downtown core.",
               },
               {
                 q: "What if it's full?",
-                a: "Join the waitlist on Luma — you'll be notified automatically if a spot opens. Spots do come up.",
+                a: "Join the waitlist on Luma — you'll be notified automatically if a spot opens.",
               },
               {
                 q: "Can I bring someone?",
-                a: "Yes — just have them sign up separately so they have their own confirmed spot.",
+                a: "Yes — just have them sign up separately.",
               },
             ].map((item) => (
               <div key={item.q} className="border-b border-warm-gray/10 pb-8 last:border-0">

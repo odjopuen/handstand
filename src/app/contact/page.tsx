@@ -118,7 +118,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-xs font-medium text-charcoal uppercase tracking-wide mb-1">Workshop</p>
-                    <p className="text-warm-gray">Monthly — rotating Toronto locations</p>
+                    <p className="text-warm-gray">Monthly — downtown Toronto</p>
                   </div>
                   <div>
                     <p className="text-xs font-medium text-charcoal uppercase tracking-wide mb-1">Response time</p>

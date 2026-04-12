@@ -7,21 +7,21 @@ const pillars = [
     number: "01",
     title: "Playful Exploration",
     description:
-      "Handstands should be fun. We approach every session with curiosity and joy — celebrating the wobbles as much as the holds.",
+      "Handstands should be fun. We celebrate the wobbles as much as the holds.",
     accent: "text-electric",
   },
   {
     number: "02",
     title: "Disciplined Progression",
     description:
-      "Real progress comes from showing up consistently. Every workshop builds on where you left off — with clear structure and real progression.",
+      "Progress comes from showing up consistently. Every workshop builds on the last.",
     accent: "text-primary-light",
   },
   {
     number: "03",
     title: "Community & Connection",
     description:
-      "This isn't a gym — it's a group of friends exploring movement together. Everyone belongs, everyone supports each other.",
+      "This isn't a gym — it's a community. Everyone belongs, everyone supports each other.",
     accent: "text-secondary-light",
   },
 ];
