@@ -43,7 +43,7 @@ export default function TestimonialsPage() {
                 </span>
 
                 <div className="relative">
-                  <span className="font-[family-name:var(--font-bebas)] text-electric text-3xl block mb-6">
+                  <span className="font-[family-name:var(--font-bebas)] text-charcoal/25 text-3xl block mb-6">
                     0{i + 1}
                   </span>
 
@@ -64,7 +64,7 @@ export default function TestimonialsPage() {
                         </cite>
                         <div className="flex items-center gap-3 mt-0.5">
                           {t.achievement && (
-                            <span className="text-electric text-xs">✦ {t.achievement}</span>
+                            <span className="text-warm-gray text-xs">✦ {t.achievement}</span>
                           )}
                           <span className="text-warm-gray text-xs">{t.duration}</span>
                         </div>

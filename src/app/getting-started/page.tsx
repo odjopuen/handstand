@@ -15,7 +15,7 @@ const steps = [
   {
     number: "02",
     title: "Sign up for the next workshop",
-    description: "One monthly workshop, rotating Toronto locations. Check the booking page for the next date and grab a spot on Luma. Max 16 people — spots go fast.",
+    description: "One monthly workshop, downtown Toronto. Check the booking page for the next date and grab a spot on Luma. Max 16 people, two coaches — spots go fast.",
   },
   {
     number: "03",
@@ -81,7 +81,7 @@ export default function GettingStartedPage() {
           <div className="space-y-0 border border-warm-gray/10">
             {steps.map((step) => (
               <div key={step.number} className="flex gap-8 p-8 border-b border-warm-gray/10 last:border-b-0 group hover:bg-sand/30 transition-colors">
-                <span className="font-[family-name:var(--font-bebas)] text-4xl text-electric flex-shrink-0 w-12">
+                <span className="font-[family-name:var(--font-bebas)] text-4xl text-charcoal/25 flex-shrink-0 w-12">
                   {step.number}
                 </span>
                 <div>
@@ -115,7 +115,7 @@ export default function GettingStartedPage() {
                   <p className="text-warm-gray text-sm line-through">{item.myth}</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-electric text-lg flex-shrink-0">✓</span>
+                  <span className="text-charcoal text-lg flex-shrink-0">✓</span>
                   <p className="text-charcoal text-sm font-medium">{item.truth}</p>
                 </div>
               </div>

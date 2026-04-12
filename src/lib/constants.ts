@@ -21,7 +21,7 @@ export const BUSINESS_INFO = {
   phone: "", // TODO: Add phone number
   email: "", // TODO: Add contact email
   // Monthly workshop — no fixed weekly schedule. Location announced per event.
-  workshopSchedule: "Monthly, rotating Toronto locations",
+  workshopSchedule: "Monthly, downtown Toronto",
   social: {
     instagram: "", // TODO: Add social links
     youtube: "",
@@ -33,7 +33,6 @@ export const NAV_LINKS = [
   { label: "About", href: "/about" },
   { label: "Workshop", href: "/classes" },
   { label: "Getting Started", href: "/getting-started" },
-  { label: "Blog", href: "/blog" },
   { label: "Gallery", href: "/gallery" },
   { label: "Testimonials", href: "/testimonials" },
   { label: "Contact", href: "/contact" },

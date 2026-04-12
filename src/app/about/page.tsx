@@ -88,7 +88,7 @@ export default function AboutPage() {
             <div className="space-y-0 border border-warm-gray/10">
               {values.map((v, i) => (
                 <div key={i} className="p-8 border-b border-warm-gray/10 last:border-b-0 hover:bg-sand/30 transition-colors">
-                  <span className="font-[family-name:var(--font-bebas)] text-electric text-4xl block mb-3">
+                  <span className="font-[family-name:var(--font-bebas)] text-charcoal/25 text-4xl block mb-3">
                     0{i + 1}
                   </span>
                   <h3 className="font-[family-name:var(--font-dm-serif)] text-xl text-charcoal mb-2">
@@ -147,7 +147,7 @@ export default function AboutPage() {
               style={{ fontSize: "clamp(1.8rem, 4vw, 3.5rem)" }}
             >
               &ldquo;The handstand is not a trick you learn —<br className="hidden lg:block" />
-              <span className="text-electric"> it&apos;s a conversation you keep having with your body.&rdquo;</span>
+              <span className="text-charcoal"> it&apos;s a conversation you keep having with your body.&rdquo;</span>
             </p>
           </div>
         </div>

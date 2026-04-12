@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 // ── Update these each month ───────────────────────────────────────────────────
 const NEXT_WORKSHOP = {
   date: "April 25, 2026",
-  location: "Toronto — location shared on sign-up",
+  location: "Downtown Toronto — exact address shared on sign-up",
   spotsLeft: 16,
 };
 const LUMA_EVENT_URL = "https://luma.com/uoopsxfs";
@@ -20,19 +20,19 @@ const LUMA_EVENT_URL = "https://luma.com/uoopsxfs";
 const whatToExpect = [
   {
     heading: "Everyone helps everyone",
-    body: "This isn't a class where you watch an instructor and copy. People spot each other, share what's working, cheer when someone nails something. The group makes the session.",
+    body: "Two coaches, sixteen people — everyone spots each other, shares what's working, cheers when someone nails something. The group makes the session.",
   },
   {
     heading: "All levels, genuinely",
     body: "First time ever trying? You'll fit right in. Been practising for years? You'll still get something out of it. The workshop is structured so there's always something useful for wherever you're at.",
   },
   {
-    heading: "Location rotates every month",
-    body: "Each workshop happens somewhere different around Toronto. Address goes out to everyone who's signed up, a few days before. Part of the fun is discovering new spaces.",
+    heading: "Downtown Toronto",
+    body: "Every workshop is in the downtown core. Exact address goes out to registered attendees a few days before — easy to get to from anywhere in the city.",
   },
   {
-    heading: "Small group, real attention",
-    body: "Max 16 people per session. Not because of capacity — because that's the right number for people to actually get coached, not just watched.",
+    heading: "Two coaches, sixteen people",
+    body: "Two instructors means everyone actually gets attention. You'll get seen, adjusted, and coached — not just watched from across the room.",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function WorkshopPage() {
                 className="font-[family-name:var(--font-bebas)] text-charcoal uppercase leading-none mb-8"
                 style={{ fontSize: "clamp(3rem, 8vw, 7rem)" }}
               >
-                April <span className="text-electric">25</span>
+                April <span className="text-charcoal">25</span>
               </p>
 
               <div className="space-y-3 mb-10">
@@ -136,7 +136,7 @@ export default function WorkshopPage() {
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {whatToExpect.map((item, i) => (
               <div key={i} className="space-y-3">
-                <span className="font-[family-name:var(--font-bebas)] text-electric text-3xl block">
+                <span className="font-[family-name:var(--font-bebas)] text-charcoal/25 text-3xl block">
                   0{i + 1}
                 </span>
                 <h3 className="font-[family-name:var(--font-dm-serif)] text-lg text-charcoal">

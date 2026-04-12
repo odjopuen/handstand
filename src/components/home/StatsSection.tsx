@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 const stats = [
   { value: 15, suffix: "", label: "Years of practice", note: "since the first wall kick-up" },
   { value: 1, suffix: "", label: "Workshop per month", note: "rotating Toronto locations" },
-  { value: 16, suffix: "", label: "Spots per session", note: "so everyone gets real attention" },
-  { value: 100, suffix: "%", label: "Worth showing up", note: "every single time" },
+  { value: 16, suffix: "", label: "Spots per workshop", note: "intentionally small" },
+  { value: 2, suffix: "", label: "Coaches per session", note: "8:1 ratio, every time" },
 ];
 
 function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {

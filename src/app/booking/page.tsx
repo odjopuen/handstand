@@ -29,7 +29,7 @@ export default function BookingPage() {
             <span className="text-outline-electric">class</span>
           </h1>
           <p className="mt-8 text-sand/60 text-lg max-w-lg leading-relaxed">
-            Monthly community workshop. Rotating Toronto locations. Max 16 people. All levels welcome.
+            Monthly community workshop, downtown Toronto. Two coaches. Max 16 people. All levels welcome.
           </p>
         </div>
       </section>
@@ -80,13 +80,13 @@ export default function BookingPage() {
               },
               {
                 icon: <MapPin size={18} />,
-                title: "Rotating Toronto locations",
-                body: "Each class is at a different spot around the city. Location details go out to registered attendees before class.",
+                title: "Downtown Toronto",
+                body: "Every workshop is in the downtown core. Exact address goes out to registered attendees a few days before.",
               },
               {
                 icon: <Users size={18} />,
-                title: "Max 16 people",
-                body: "Intentionally small so everyone gets real attention, not just a number in a big group.",
+                title: "2 coaches, 16 people",
+                body: "Two instructors means everyone gets real attention — eyes on your form, not just a general correction shouted across the room.",
               },
             ].map((item) => (
               <div key={item.title} className="flex gap-5 p-6 rounded-2xl border border-warm-gray/10 hover:bg-sand/20 transition-colors">

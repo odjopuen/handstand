@@ -114,19 +114,21 @@ export default function BlogPage() {
             ))}
           </div>
 
-          {/* Newsletter CTA */}
+          {/* WhatsApp CTA */}
           <div className="mt-16 rounded-3xl bg-sand p-8 text-center">
             <p className="font-[family-name:var(--font-caveat)] text-warm-gray text-lg mb-2">
-              never miss a post
+              stay connected
             </p>
             <h3 className="font-[family-name:var(--font-dm-serif)] text-xl text-charcoal mb-4">
-              Get new articles in your inbox
+              Join the WhatsApp group for updates and training buddies
             </h3>
             <Link
-              href="/#newsletter"
+              href="https://chat.whatsapp.com/PLACEHOLDER"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-8 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
             >
-              Subscribe
+              Join the group
             </Link>
           </div>
         </div>

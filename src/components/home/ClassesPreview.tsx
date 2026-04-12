@@ -9,7 +9,7 @@ import { ArrowRight, MapPin, Calendar, Users } from "lucide-react";
 const NEXT_WORKSHOP = {
   date: "April 25",
   year: "2026",
-  location: "Toronto — location shared on sign-up",
+  location: "Downtown Toronto — address shared on sign-up",
   spotsLeft: 16,
 };
 // ─────────────────────────────────────────────────────────────────────────────

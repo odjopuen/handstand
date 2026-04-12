@@ -1,36 +1,18 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
+import { MessageCircle } from "lucide-react";
+
+const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/PLACEHOLDER"; // ← replace with your group invite link
 
 export function NewsletterCapture() {
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-    setStatus("loading");
-    try {
-      const res = await fetch("/api/newsletter", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-      });
-      setStatus(res.ok ? "success" : "error");
-      if (res.ok) setEmail("");
-    } catch {
-      setStatus("error");
-    }
-  };
-
   return (
     <section className="bg-off-white py-24 lg:py-28">
       <div className="max-w-7xl mx-auto px-6">
         <div className="rounded-3xl bg-charcoal p-10 lg:p-16 relative overflow-hidden">
           {/* Background text */}
           <div className="absolute right-0 bottom-0 font-[family-name:var(--font-bebas)] text-[12rem] leading-none text-white/[0.03] select-none pointer-events-none">
-            FREE
+            SQUAD
           </div>
 
           <div className="relative z-10 max-w-2xl">
@@ -41,7 +23,7 @@ export function NewsletterCapture() {
               transition={{ duration: 0.5 }}
               className="font-[family-name:var(--font-caveat)] text-sand/50 text-xl mb-4"
             >
-              free guide
+              stay in the loop
             </motion.p>
 
             <motion.h2
@@ -52,8 +34,8 @@ export function NewsletterCapture() {
               className="font-[family-name:var(--font-bebas)] text-off-white uppercase leading-none mb-4"
               style={{ fontSize: "clamp(2.5rem, 6vw, 5rem)" }}
             >
-              Your first{" "}
-              <span className="text-electric">30 days</span>
+              Join the{" "}
+              <span className="text-electric">WhatsApp group</span>
             </motion.h2>
 
             <motion.p
@@ -63,44 +45,24 @@ export function NewsletterCapture() {
               transition={{ delay: 0.2 }}
               className="text-sand/50 text-sm leading-relaxed mb-8 max-w-md"
             >
-              Daily drills, warm-ups, and progressions built for beginners. No gym needed. Just 15 minutes a day.
+              Upcoming dates, location drops, training tips — and a place to find a practice buddy between workshops.
             </motion.p>
 
-            {status === "success" ? (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="rounded-xl bg-electric/10 border border-electric/20 p-5 inline-flex items-center gap-3"
-              >
-                <span className="text-electric text-xl">✓</span>
-                <p className="text-electric font-medium text-sm">Guide sent! Check your inbox.</p>
-              </motion.div>
-            ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:flex-row sm:items-stretch max-w-md">
-                <input
-                  type="email"
-                  placeholder="your@email.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  className="flex-1 rounded-full bg-white/[0.06] border border-white/10 text-off-white placeholder:text-sand/25 px-5 py-3.5 text-sm focus:outline-none focus:border-electric/50 transition-colors"
-                  aria-label="Email address"
-                />
-                <button
-                  type="submit"
-                  disabled={status === "loading"}
-                  className="rounded-full bg-electric text-charcoal font-bold text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors disabled:opacity-60 whitespace-nowrap"
-                >
-                  {status === "loading" ? "Sending..." : "Send it to me"}
-                </button>
-              </form>
-            )}
+            <motion.a
+              href={WHATSAPP_GROUP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="inline-flex items-center gap-3 rounded-full bg-electric text-charcoal font-bold text-sm px-8 py-4 tracking-wide uppercase hover:bg-electric-dark transition-colors"
+            >
+              <MessageCircle size={16} />
+              Join the group
+            </motion.a>
 
-            {status === "error" && (
-              <p className="mt-3 text-xs text-error">Something went wrong. Please try again.</p>
-            )}
-
-            <p className="mt-4 text-sand/25 text-xs">No spam. Unsubscribe anytime.</p>
+            <p className="mt-4 text-sand/25 text-xs">Free to join. Leave anytime.</p>
           </div>
         </div>
       </div>
