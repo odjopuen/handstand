@@ -1,25 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
   <!-- Squircle background -->
-  <rect x="2" y="2" width="96" height="96" rx="22" fill="#8B5CF6"/>
+  <rect x="4" y="4" width="92" height="92" rx="22" fill="#8B5CF6"/>
 
-  <!-- Vertical body line -->
-  <line x1="50" y1="14" x2="50" y2="86" stroke="#FFFDF8" stroke-width="5" stroke-linecap="round"/>
+  <!-- Left arm (hand to shoulder) -->
+  <line x1="28" y1="82" x2="50" y2="60" stroke="#FFFDF8" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- Horizontal arms line (lower third) -->
-  <line x1="14" y1="64" x2="86" y2="64" stroke="#FFFDF8" stroke-width="5" stroke-linecap="round"/>
+  <!-- Right arm (hand to shoulder) -->
+  <line x1="72" y1="82" x2="50" y2="60" stroke="#FFFDF8" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- Head (large dot at bottom) -->
-  <circle cx="50" cy="82" r="7" fill="#FFFDF8"/>
+  <!-- Neck -->
+  <line x1="50" y1="60" x2="50" y2="70" stroke="#FFFDF8" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- Feet (small dot at top) -->
-  <circle cx="50" cy="16" r="4.5" fill="#FFFDF8"/>
+  <!-- Head -->
+  <circle cx="50" cy="76" r="5.5" fill="#FFFDF8"/>
 
-  <!-- Left hand -->
-  <circle cx="17" cy="64" r="4.5" fill="#FFFDF8"/>
+  <!-- Body -->
+  <line x1="50" y1="60" x2="50" y2="26" stroke="#FFFDF8" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- Right hand -->
-  <circle cx="83" cy="64" r="4.5" fill="#FFFDF8"/>
+  <!-- Left leg -->
+  <line x1="50" y1="26" x2="20" y2="10" stroke="#FFFDF8" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- Centre balance dot -->
-  <circle cx="50" cy="50" r="3" fill="#FFFDF8" opacity="0.35"/>
+  <!-- Right leg -->
+  <line x1="50" y1="26" x2="80" y2="10" stroke="#FFFDF8" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Left hand dot -->
+  <circle cx="28" cy="82" r="3.5" fill="#FFFDF8"/>
+
+  <!-- Right hand dot -->
+  <circle cx="72" cy="82" r="3.5" fill="#FFFDF8"/>
+
+  <!-- Left foot dot -->
+  <circle cx="18" cy="8" r="4" fill="#FFFDF8"/>
+
+  <!-- Right foot dot -->
+  <circle cx="82" cy="8" r="4" fill="#FFFDF8"/>
 </svg>
