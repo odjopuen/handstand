@@ -25,8 +25,10 @@ export function Hero() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        {/* Dark overlay — keeps text readable, keeps brand charcoal feel */}
+        {/* Dark overlay */}
         <div className="absolute inset-0 bg-charcoal/72" />
+        {/* Top fade — keeps header area dark so logo is always readable */}
+        <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-charcoal to-transparent" />
         {/* Bottom fade to charcoal */}
         <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-charcoal to-transparent" />
       </div>
@@ -53,18 +55,7 @@ export function Hero() {
       <div className="absolute top-0 right-0 w-px h-full bg-gradient-to-b from-transparent via-white/10 to-transparent" />
       <div className="absolute top-0 left-[60%] w-px h-full bg-gradient-to-b from-transparent via-white/5 to-transparent hidden lg:block" />
 
-      {/* Eyebrow — top left, below header */}
-      <motion.p
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="absolute top-24 left-6 right-6 z-10 font-[family-name:var(--font-caveat)] text-primary-light"
-        style={{ fontSize: "clamp(1rem, 2vw, 1.4rem)" }}
-      >
-        Deep practice. Real community. Toronto.
-      </motion.p>
-
-      {/* Giant headline — always fills viewport */}
+      {/* Giant headline — vertically centred, eyebrow sits directly above it */}
       <div className="absolute inset-0 flex items-center z-10 px-6 max-w-7xl mx-auto w-full" style={{ left: '50%', transform: 'translateX(-50%)' }}>
         <motion.div
           initial={{ opacity: 0, y: 60 }}
@@ -72,6 +63,17 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="w-full"
         >
+          {/* Eyebrow — sits right above the headline like every other page */}
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="font-[family-name:var(--font-caveat)] text-primary-light mb-2"
+            style={{ fontSize: "clamp(1rem, 2vw, 1.4rem)" }}
+          >
+            Deep practice. Real community. Toronto.
+          </motion.p>
+
           <h1 className="font-[family-name:var(--font-bebas)] uppercase leading-[0.88] tracking-tight">
             {["Being", "Upside", "Down"].map((word, i) => (
               <span
