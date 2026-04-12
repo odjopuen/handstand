@@ -94,7 +94,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={status === "loading"}
-                    className="rounded-full bg-electric text-charcoal font-bold text-sm px-8 py-4 tracking-wide uppercase hover:bg-electric-dark transition-colors disabled:opacity-60 w-full"
+                    className="rounded-full bg-electric text-off-white font-bold text-sm px-8 py-4 tracking-wide uppercase hover:bg-electric-dark transition-colors disabled:opacity-60 w-full"
                   >
                     {status === "loading" ? "Sending..." : "Send Message"}
                   </button>
@@ -139,7 +139,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href="/booking"
-                  className="inline-flex items-center justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
+                  className="inline-flex items-center justify-center rounded-full bg-electric text-off-white font-bold text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
                 >
                   Sign Up for the Workshop
                 </a>

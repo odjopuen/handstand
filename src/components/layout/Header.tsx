@@ -1,7 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/ui/Container";
 import { buttonVariants } from "@/components/ui/Button";
@@ -9,25 +6,8 @@ import { Navigation } from "./Navigation";
 import { MobileMenu } from "./MobileMenu";
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <header
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled
-          ? "bg-off-white/95 backdrop-blur-md shadow-[var(--shadow-sm)]"
-          : "bg-transparent"
-      )}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-off-white/95 backdrop-blur-md shadow-[var(--shadow-sm)]">
       <Container>
         <div className="flex h-16 items-center justify-between lg:h-20">
           <Link

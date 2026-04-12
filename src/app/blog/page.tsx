@@ -126,7 +126,7 @@ export default function BlogPage() {
               href="https://chat.whatsapp.com/PLACEHOLDER"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-8 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
+              className="inline-flex items-center justify-center rounded-full bg-electric text-off-white font-bold text-sm px-8 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
             >
               Join the group
             </Link>

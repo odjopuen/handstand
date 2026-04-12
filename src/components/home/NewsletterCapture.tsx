@@ -56,7 +56,7 @@ export function NewsletterCapture() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="inline-flex items-center gap-3 rounded-full bg-electric text-charcoal font-bold text-sm px-8 py-4 tracking-wide uppercase hover:bg-electric-dark transition-colors"
+              className="inline-flex items-center gap-3 rounded-full bg-electric text-off-white font-bold text-sm px-8 py-4 tracking-wide uppercase hover:bg-electric-dark transition-colors"
             >
               <MessageCircle size={16} />
               Join the group

@@ -10,7 +10,7 @@ export function CTABanner() {
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div
           className="w-[60vw] h-[60vw] rounded-full opacity-[0.03] animate-float"
-          style={{ background: "radial-gradient(circle, #D4FF4E 0%, transparent 70%)" }}
+          style={{ background: "radial-gradient(circle, #8B5CF6 0%, transparent 70%)" }}
         />
       </div>
 
@@ -57,7 +57,7 @@ export function CTABanner() {
         >
           <Link
             href="/booking"
-            className="inline-flex items-center justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-10 py-5 tracking-wide uppercase hover:bg-electric-dark transition-all duration-200 hover:scale-[1.02]"
+            className="inline-flex items-center justify-center rounded-full bg-electric text-off-white font-bold text-sm px-10 py-5 tracking-wide uppercase hover:bg-electric-dark transition-all duration-200 hover:scale-[1.02]"
           >
             Sign Up for the Workshop
           </Link>

@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  /* Primary — Terracotta */
-  --color-primary: #C2703E;
-  --color-primary-dark: #9A5630;
-  --color-primary-light: #E8A87C;
+  /* Primary — Violet */
+  --color-primary: #8B5CF6;
+  --color-primary-dark: #7C3AED;
+  --color-primary-light: #C4B5FD;
 
-  /* Electric — Lime Yellow (new energy accent) */
-  --color-electric: #D4FF4E;
-  --color-electric-dark: #AACF1A;
+  /* Electric — Vivid Violet */
+  --color-electric: #8B5CF6;
+  --color-electric-dark: #7C3AED;
 
   /* Secondary — Sage Green */
   --color-secondary: #7A8B6F;
@@ -115,7 +115,7 @@ body {
 
 /* Outline text utility */
 .text-outline-electric {
-  -webkit-text-stroke: 3px #D4FF4E;
+  -webkit-text-stroke: 3px #8B5CF6;
   color: transparent;
 }
 .text-outline-white {

@@ -75,7 +75,7 @@ export function Hero() {
           </motion.p>
 
           <h1 className="font-[family-name:var(--font-bebas)] uppercase leading-[0.88] tracking-tight">
-            {["Being", "Upside", "Down"].map((word, i) => (
+            {["Ground", "Work", "Handstand"].map((word, i) => (
               <span
                 key={word}
                 className={`block ${i === 1 ? "text-outline-electric" : "text-off-white"}`}
@@ -105,7 +105,7 @@ export function Hero() {
           <div className="flex flex-wrap gap-3 items-center">
             <Link
               href="/booking"
-              className="inline-flex items-center justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
+              className="inline-flex items-center justify-center rounded-full bg-electric text-off-white font-bold text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
             >
               Sign Up for Workshop
             </Link>

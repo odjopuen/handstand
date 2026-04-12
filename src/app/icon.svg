@@ -2,26 +2,26 @@
   <!-- Charcoal background -->
   <rect width="32" height="32" rx="7" fill="#1C1C1E"/>
 
-  <!-- Handstand figure — electric yellow -->
+  <!-- Handstand figure — electric violet -->
   <!-- Feet at top, spread apart -->
-  <circle cx="10" cy="3.5" r="1.4" fill="#D4FF4E"/>
-  <circle cx="22" cy="3.5" r="1.4" fill="#D4FF4E"/>
+  <circle cx="10" cy="3.5" r="1.4" fill="#8B5CF6"/>
+  <circle cx="22" cy="3.5" r="1.4" fill="#8B5CF6"/>
 
   <!-- Legs converging to hips -->
-  <line x1="10" y1="4.8" x2="16" y2="12" stroke="#D4FF4E" stroke-width="1.8" stroke-linecap="round"/>
-  <line x1="22" y1="4.8" x2="16" y2="12" stroke="#D4FF4E" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="10" y1="4.8" x2="16" y2="12" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="22" y1="4.8" x2="16" y2="12" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round"/>
 
   <!-- Body -->
-  <line x1="16" y1="12" x2="16" y2="19" stroke="#D4FF4E" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="16" y1="12" x2="16" y2="19" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round"/>
 
   <!-- Arms spreading to floor -->
-  <line x1="16" y1="19" x2="8" y2="25" stroke="#D4FF4E" stroke-width="1.8" stroke-linecap="round"/>
-  <line x1="16" y1="19" x2="24" y2="25" stroke="#D4FF4E" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="16" y1="19" x2="8" y2="25" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="16" y1="19" x2="24" y2="25" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round"/>
 
   <!-- Hands on the ground -->
-  <circle cx="8" cy="25.5" r="1.4" fill="#D4FF4E"/>
-  <circle cx="24" cy="25.5" r="1.4" fill="#D4FF4E"/>
+  <circle cx="8" cy="25.5" r="1.4" fill="#8B5CF6"/>
+  <circle cx="24" cy="25.5" r="1.4" fill="#8B5CF6"/>
 
   <!-- Head (between arms, near floor) -->
-  <circle cx="16" cy="28" r="1.8" fill="#D4FF4E"/>
+  <circle cx="16" cy="28" r="1.8" fill="#8B5CF6"/>
 </svg>

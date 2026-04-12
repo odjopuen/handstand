@@ -143,7 +143,7 @@ export function ClassesPreview() {
             >
               <Link
                 href="/booking"
-                className="inline-flex items-center justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
+                className="inline-flex items-center justify-center rounded-full bg-electric text-off-white font-bold text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
               >
                 Sign up
               </Link>

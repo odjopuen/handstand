@@ -165,7 +165,7 @@ export default function AboutPage() {
         </h2>
         <a
           href="/booking"
-          className="inline-flex items-center justify-center rounded-full bg-electric text-charcoal font-bold text-sm px-10 py-5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
+          className="inline-flex items-center justify-center rounded-full bg-electric text-off-white font-bold text-sm px-10 py-5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
         >
           Sign Up for the Workshop
         </a>

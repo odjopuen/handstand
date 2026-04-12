@@ -26,7 +26,7 @@ export function Marquee({ dark = true, reverse = false, className = "" }: Marque
           <span key={i} className="flex items-center">
             <span
               className={`font-[family-name:var(--font-bebas)] text-2xl tracking-widest uppercase px-6 whitespace-nowrap ${
-                dark ? "text-off-white/80" : "text-charcoal"
+                dark ? "text-off-white/80" : "text-off-white"
               }`}
             >
               {item}
