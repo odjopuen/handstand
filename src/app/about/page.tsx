@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const values = [
   {
     title: "Patience first",
-    description: "Handstands take years, like learning to walk. The class is there to show you how, and to keep you coming back.",
+    description: "A clean handstand takes time — closer to learning to walk than learning a trick. The class shows you how, and keeps you coming back.",
   },
   {
     title: "Train between sessions",
@@ -150,7 +150,7 @@ export default function AboutPage() {
               style={{ fontSize: "clamp(1.8rem, 4vw, 3.5rem)" }}
             >
               &ldquo;A handstand isn&apos;t a trick you learn.<br className="hidden lg:block" />
-              <span className="text-charcoal"> It&apos;s a conversation you keep having with your body — for years.&rdquo;</span>
+              <span className="text-charcoal"> It&apos;s a conversation you keep having with your body — one that gets better with time.&rdquo;</span>
             </p>
           </div>
         </div>

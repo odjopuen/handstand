@@ -168,3 +168,4 @@
 | 2026-04-14 | Live-site verification pass via Playwright — home/about/classes/booking/getting-started/gallery/contact all rendered with new copy. `/blog` + `/testimonials` return 404 as expected. No console errors. | #1 |
 | 2026-04-14 | Revised hero eyebrow to *"Practice, consistency, patience. We lay the ground work."* — brand pun, echoes the patience voice. | #1 |
 | 2026-04-14 | Standardized all workshop CTA buttons from *"Sign Up for (the/next) Workshop"* → *"Workshop Sign Up"* (Hero, CTABanner, Footer, About, Contact, Gallery, Getting Started). | #1 |
+| 2026-04-14 | Softened "handstands take years" phrasing site-wide to be encouraging, not demotivating — updated `constants.ts` description, About values card + pullquote, Classes FAQ, Booking FAQ, Getting Started myth. New pattern: "a clean handstand takes time — closer to learning to walk than learning a trick". Jonny's personal "went on for years" line kept as-is (authentic origin story). | #1 |

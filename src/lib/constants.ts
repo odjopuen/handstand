@@ -2,7 +2,7 @@ export const SITE_CONFIG = {
   name: "Ground Work",
   tagline: "Toronto Handstand Workshop",
   description:
-    "Ground Work is a monthly handstand workshop in Toronto. 90 minutes, 16 spots, all levels. Handstands take years — we'll show you how to train, and build the community to practise with.",
+    "Ground Work is a monthly handstand workshop in Toronto. 90 minutes, 16 spots, all levels. Perfecting a handstand takes time — we'll show you how to train, and build the community to practise with.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://groundworkto.com",
   ogImage: "/images/og/default.jpg",
   creator: "Ground Work",

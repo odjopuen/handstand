@@ -118,7 +118,7 @@ export default function BookingPage() {
                 },
                 {
                   q: "Will I handstand after one class?",
-                  a: "Honestly? No. Handstands take years — like learning to walk. You'll leave knowing how to train, and with people to train with.",
+                  a: "Honestly? Not fully — a clean handstand takes time, closer to learning to walk than learning a trick. But you'll leave knowing exactly how to train, and with people to train with.",
                 },
                 {
                   q: "What should I wear?",
