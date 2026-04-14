@@ -40,7 +40,7 @@
 ## Home page
 
 ### Hero (`src/components/home/Hero.tsx`)
-- [x] Eyebrow → *"Handstands take years. We'll walk you through the first ones."*
+- [x] Eyebrow → *"Practice, consistency, patience. We lay the ground work."* (revised 2026-04-14 — brand pun, echoes voice)
 - [x] Bottom tagline → *"One workshop a month. Toronto. All levels. 16 spots — kept small so you actually get seen."*
 
 ### ValueProposition (`src/components/home/ValueProposition.tsx`)
@@ -165,3 +165,5 @@
 |---|---|---|
 | 2026-04-13 | Audit drafted. Tracking doc + memory pointer created. | #1 |
 | 2026-04-13 | Applied all 🔴 and 🟡 edits across 17 files: home (Hero, ValueProposition, ClassesPreview, StatsSection, NewsletterCapture, CTABanner, Marquee, page.tsx), about, classes, booking, getting-started, gallery, contact, Header, MobileMenu, Footer, constants, seo, sitemap, classes.ts, testimonials.ts. Deleted `/blog` and `/testimonials` routes. Type-check clean (dev cache errors only). | #1 |
+| 2026-04-14 | Live-site verification pass via Playwright — home/about/classes/booking/getting-started/gallery/contact all rendered with new copy. `/blog` + `/testimonials` return 404 as expected. No console errors. | #1 |
+| 2026-04-14 | Revised hero eyebrow to *"Practice, consistency, patience. We lay the ground work."* — brand pun, echoes the patience voice. | #1 |

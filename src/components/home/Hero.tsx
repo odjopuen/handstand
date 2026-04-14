@@ -71,7 +71,7 @@ export function Hero() {
             className="font-[family-name:var(--font-caveat)] text-primary-light mb-2"
             style={{ fontSize: "clamp(1rem, 2vw, 1.4rem)" }}
           >
-            Handstands take years. We&apos;ll walk you through the first ones.
+            Practice, consistency, patience. We lay the ground work.
           </motion.p>
 
           <h1 className="font-[family-name:var(--font-bebas)] uppercase leading-[0.88] tracking-tight">
