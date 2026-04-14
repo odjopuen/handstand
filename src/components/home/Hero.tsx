@@ -98,7 +98,8 @@ export function Hero() {
       >
         <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <p className="text-sand/50 text-sm leading-relaxed max-w-xs">
-            One workshop a month. Toronto.<br className="hidden sm:block" />
+            One workshop a month. Toronto.{" "}
+            <br className="hidden sm:block" />
             All levels. 16 spots — kept small so you actually get seen.
           </p>
 
