@@ -22,7 +22,7 @@ export function CTABanner() {
           transition={{ duration: 0.5 }}
           className="font-[family-name:var(--font-caveat)] text-sand/40 text-xl mb-6"
         >
-          the only thing missing is you
+          once you get it, you&apos;re hooked — promise
         </motion.p>
 
         <motion.h2
@@ -45,7 +45,7 @@ export function CTABanner() {
           transition={{ delay: 0.3 }}
           className="mt-6 text-sand/50 text-lg max-w-md mx-auto"
         >
-          No experience needed. Just show up.
+          Curious, rediscovering it, or deep in it — everyone belongs. Just show up.
         </motion.p>
 
         <motion.div
@@ -79,9 +79,9 @@ export function CTABanner() {
         >
           <span>Small groups</span>
           <span className="text-electric/40">✦</span>
-          <span>All levels welcome</span>
+          <span>All levels</span>
           <span className="text-electric/40">✦</span>
-          <span>Just show up</span>
+          <span>Built for community</span>
         </motion.div>
       </div>
     </section>

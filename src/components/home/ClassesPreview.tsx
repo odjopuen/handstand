@@ -100,7 +100,7 @@ export function ClassesPreview() {
               transition={{ delay: 0.15 }}
               className="text-sand/60 leading-relaxed mb-10 max-w-md"
             >
-              Once a month, people gather to work on handstands. All levels. Everyone helps everyone.
+              90 minutes. Warm-up, handstand practice, and a HIIT finisher so nothing&apos;s left in the tank. You&apos;ll leave exhausted. Probably addicted.
             </motion.p>
 
             {/* Next date card */}

@@ -28,7 +28,7 @@ export default function ContactPage() {
       <section className="bg-charcoal pt-32 pb-24 lg:pt-40 lg:pb-32">
         <div className="max-w-7xl mx-auto px-6">
           <p className="font-[family-name:var(--font-caveat)] text-primary-light text-xl mb-4">
-            We&apos;re friendly, we promise
+            Easiest way to ask? Show up.
           </p>
           <h1
             className="font-[family-name:var(--font-bebas)] text-off-white uppercase leading-none"
@@ -54,7 +54,7 @@ export default function ContactPage() {
                 <div className="rounded-2xl bg-electric/10 border border-electric/20 p-8 text-center">
                   <p className="text-4xl mb-3">🤸</p>
                   <p className="font-[family-name:var(--font-dm-serif)] text-xl text-charcoal mb-2">Message received!</p>
-                  <p className="text-warm-gray text-sm">We&apos;ll get back to you within 24 hours.</p>
+                  <p className="text-warm-gray text-sm">We&apos;ll get back to you soon — usually same day.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
@@ -122,7 +122,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-xs font-medium text-charcoal uppercase tracking-wide mb-1">Response time</p>
-                    <p className="text-warm-gray">Within 24 hours, always.</p>
+                    <p className="text-warm-gray">Usually same day. Always within a couple.</p>
                   </div>
                 </div>
               </div>

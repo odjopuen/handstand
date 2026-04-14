@@ -28,7 +28,7 @@ export function Header() {
                 "hidden lg:inline-flex"
               )}
             >
-              Join Workshop
+              Sign Up
             </Link>
             <MobileMenu />
           </div>

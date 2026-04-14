@@ -88,7 +88,7 @@ export function MobileMenu() {
                 "w-full"
               )}
             >
-              Book a Class
+              Sign Up
             </Link>
           </div>
         </nav>

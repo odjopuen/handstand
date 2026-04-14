@@ -45,7 +45,7 @@ export function NewsletterCapture() {
               transition={{ delay: 0.2 }}
               className="text-sand/50 text-sm leading-relaxed mb-8 max-w-md"
             >
-              A group of people who show up, help each other, and keep practising between workshops. Dates, location drops, and training tips included.
+              Where we post next dates, drop locations, share training tips, and you can ask questions between workshops. This is where the community actually lives.
             </motion.p>
 
             <motion.a

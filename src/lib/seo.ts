@@ -86,11 +86,6 @@ export function buildWebSiteSchema() {
     name: SITE_CONFIG.name,
     url: SITE_CONFIG.url,
     description: SITE_CONFIG.description,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: `${SITE_CONFIG.url}/blog?q={search_term_string}`,
-      "query-input": "required name=search_term_string",
-    },
   };
 }
 

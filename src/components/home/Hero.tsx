@@ -71,7 +71,7 @@ export function Hero() {
             className="font-[family-name:var(--font-caveat)] text-primary-light mb-2"
             style={{ fontSize: "clamp(1rem, 2vw, 1.4rem)" }}
           >
-            Deep practice. Real community. Toronto.
+            Handstands take years. We&apos;ll walk you through the first ones.
           </motion.p>
 
           <h1 className="font-[family-name:var(--font-bebas)] uppercase leading-[0.88] tracking-tight">
@@ -98,8 +98,8 @@ export function Hero() {
       >
         <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <p className="text-sand/50 text-sm leading-relaxed max-w-xs">
-            Monthly workshop. Toronto.<br className="hidden sm:block" />
-            All levels. Max 16 people.
+            One workshop a month. Toronto.<br className="hidden sm:block" />
+            All levels. 16 spots — kept small so you actually get seen.
           </p>
 
           <div className="flex flex-wrap gap-3 items-center">

@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { Calendar, MapPin, Users, ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Workshop",
-  description: "Monthly handstand workshop in downtown Toronto. All levels welcome. Two coaches, max 16 people. Book your spot and learn to handstand.",
+  description: "Monthly handstand workshop in Toronto. 90-minute format: warm-up, handstand practice by level, HIIT finisher. Max 16. All levels. Co-hosted by Jonny & Garson.",
 };
 
 // ── Update these each month ───────────────────────────────────────────────────
 const NEXT_WORKSHOP = {
   date: "April 25, 2026",
+  time: "2:00 – 3:30 PM",
   location: "Downtown Toronto — exact address shared on sign-up",
   spotsLeft: 16,
 };
@@ -19,20 +19,20 @@ const LUMA_EVENT_URL = "https://luma.com/uoopsxfs";
 
 const whatToExpect = [
   {
-    heading: "Everyone helps everyone",
-    body: "Two coaches, sixteen people — everyone spots each other, shares what's working, cheers when someone nails something. The group makes the session.",
+    heading: "The structure",
+    body: "30 minutes warm-up (wrists get the love they deserve). 30 minutes handstand practice, split by level. 30 minutes full-body HIIT to finish. 90 minutes total.",
+  },
+  {
+    heading: "Not a yoga class",
+    body: "This is a workout. You'll sweat. You'll probably be sore tomorrow. The handstand stuff is patient, precise work — the HIIT at the end makes sure nobody leaves with energy left over.",
   },
   {
     heading: "All levels, genuinely",
-    body: "First time? You'll fit right in. Been practising for years? You'll still get something out of it. There's always something useful for wherever you're at.",
+    body: "First-timer, coming back after years, or already freestanding — we split the practice block by where you're at. Everyone gets something useful.",
   },
   {
-    heading: "Downtown Toronto",
-    body: "Every workshop is in the downtown core. Exact address goes out to registered attendees a few days before.",
-  },
-  {
-    heading: "Two coaches, sixteen people",
-    body: "Two instructors means everyone actually gets attention. You'll get seen, adjusted, and coached — not just watched from across the room.",
+    heading: "Co-hosted",
+    body: "Jonny leading the handstand side, Garson Karrel co-hosting — my friend and movement coach (animal movement is his specialty). He's learning handstands alongside you.",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function WorkshopPage() {
             <span className="text-outline-electric">Workshop</span>
           </h1>
           <p className="text-sand/50 text-lg max-w-lg leading-relaxed">
-            Once a month, a group gathers to work on handstands. All levels. No ego. Just practice.
+            Once a month, a group gathers to work on handstands. 90 minutes. Warm-up, practice, HIIT finisher. You&apos;ll leave exhausted — in the best way.
           </p>
         </div>
       </section>
@@ -90,7 +90,7 @@ export default function WorkshopPage() {
               <div className="space-y-3 mb-10">
                 <div className="flex items-center gap-3 text-warm-gray">
                   <Calendar size={16} className="text-electric flex-shrink-0" />
-                  <span>{NEXT_WORKSHOP.date}</span>
+                  <span>{NEXT_WORKSHOP.date} · {NEXT_WORKSHOP.time}</span>
                 </div>
                 <div className="flex items-center gap-3 text-warm-gray">
                   <MapPin size={16} className="text-electric flex-shrink-0" />
@@ -189,7 +189,15 @@ export default function WorkshopPage() {
             {[
               {
                 q: "Do I need any experience?",
-                a: "None at all. Beginners are just as welcome as people who've been practising for years.",
+                a: "No. First-timers and people who haven't moved in a while are exactly who this is for. You won't be the only one.",
+              },
+              {
+                q: "How fit do I need to be?",
+                a: "Fit enough to move for 90 minutes. If you can walk up a few flights of stairs, you'll manage — and you'll be better for coming.",
+              },
+              {
+                q: "Will I be able to handstand after one class?",
+                a: "Honestly? No. Handstands take years — like learning to walk. But you'll leave knowing exactly how to train, and with people to train with.",
               },
               {
                 q: "What should I wear?",
@@ -197,7 +205,7 @@ export default function WorkshopPage() {
               },
               {
                 q: "How do I find out the location?",
-                a: "Once you've signed up, the address is sent out a few days before. Always in the downtown core.",
+                a: "Location rotates — we use different downtown Toronto spots. Exact address is in the Luma confirmation a few days before.",
               },
               {
                 q: "What if it's full?",
@@ -205,7 +213,7 @@ export default function WorkshopPage() {
               },
               {
                 q: "Can I bring someone?",
-                a: "Yes — just have them sign up separately.",
+                a: "Yes — just have them sign up separately on Luma.",
               },
             ].map((item) => (
               <div key={item.q} className="border-b border-warm-gray/10 pb-8 last:border-0">

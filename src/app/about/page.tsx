@@ -4,22 +4,22 @@ import { Marquee } from "@/components/home/Marquee";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Ground Work is run by Jonny — 15 years of handstand practice, a community-first teaching philosophy, and a deep belief that patience is the real skill.",
+  description: "Ground Work is run by Jonny, co-hosted with Garson Karrel — 15 years of handstand practice, a community-first approach, and a deep belief that patience is the real skill.",
 };
 
 
 const values = [
   {
-    title: "Beginners first",
-    description: "Every expert was once a beginner. Every session is designed around it.",
+    title: "Patience first",
+    description: "Handstands take years, like learning to walk. The class is there to show you how, and to keep you coming back.",
   },
   {
-    title: "Progress, not perfection",
-    description: "The wobbles are part of it. We celebrate the process, not just the hold.",
+    title: "Train between sessions",
+    description: "Real progress happens in the weeks between workshops. We'll give you what to work on and people to work on it with.",
   },
   {
-    title: "Community over competition",
-    description: "We cheer louder for each other than for ourselves. That's what makes this special.",
+    title: "Community is the point",
+    description: "Curious, rediscovering, or already deep in it — everyone belongs. The goal is to leave with people you can practise with.",
   },
 ];
 
@@ -40,7 +40,7 @@ export default function AboutPage() {
             <span className="text-outline-electric">us</span>
           </h1>
           <p className="mt-8 text-sand/60 text-lg max-w-lg leading-relaxed">
-            Thousands of hours upside down, and one unwavering belief — anyone can learn to handstand.
+            Fifteen years of practice, a lot of breaks, and one belief that kept bringing me back: anyone can learn — if they&apos;re willing to be patient.
           </p>
         </div>
       </section>
@@ -73,13 +73,16 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-5 text-warm-gray leading-relaxed">
                 <p>
-                  Handstands changed my life — not because they made me stronger or more flexible, but because they taught me what it means to be genuinely present.
+                  I started handstanding at 14 and promptly stopped. Then started again. Then stopped. That went on for years — I had more breaks than sessions. At some point it finally clicked, and since then I haven&apos;t looked back. Obsessed is probably the right word.
                 </p>
                 <p>
-                  When you&apos;re upside down, there&apos;s no room for yesterday&apos;s problems or tomorrow&apos;s anxiety. Only now. Only this breath. Only this millimetre of adjustment.
+                  I teach because this practice got me through a lot, and it did it with two ingredients I didn&apos;t always want: patience, and consistency. I want to share what that looks like — and to build a community of people who train together, so nobody has to figure it out alone.
                 </p>
                 <p>
-                  I started teaching because I wanted more people to feel that — the joy, the surprise of what your body can do.
+                  I co-host the workshops with my friend Garson Karrel — my own movement coach (animal movement is his specialty), now learning handstands alongside everyone else. Two sets of eyes, real attention, honest support.
+                </p>
+                <p className="font-[family-name:var(--font-dm-serif)] text-charcoal text-lg italic">
+                  Once you get it, you&apos;re hooked. Promise.
                 </p>
               </div>
             </div>
@@ -146,8 +149,8 @@ export default function AboutPage() {
               className="font-[family-name:var(--font-bebas)] text-charcoal uppercase leading-tight"
               style={{ fontSize: "clamp(1.8rem, 4vw, 3.5rem)" }}
             >
-              &ldquo;The handstand is not a trick you learn —<br className="hidden lg:block" />
-              <span className="text-charcoal"> it&apos;s a conversation you keep having with your body.&rdquo;</span>
+              &ldquo;A handstand isn&apos;t a trick you learn.<br className="hidden lg:block" />
+              <span className="text-charcoal"> It&apos;s a conversation you keep having with your body — for years.&rdquo;</span>
             </p>
           </div>
         </div>

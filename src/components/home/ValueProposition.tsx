@@ -5,23 +5,23 @@ import { motion } from "framer-motion";
 const pillars = [
   {
     number: "01",
-    title: "Playful Exploration",
+    title: "Patience is the skill",
     description:
-      "Handstands should be fun. We celebrate the wobbles as much as the holds.",
+      "Handstands are more a practice of patience than a workout. Show up, fall, adjust, show up again. That's the whole game.",
     accent: "text-electric",
   },
   {
     number: "02",
-    title: "Disciplined Progression",
+    title: "Learn how to train",
     description:
-      "Progress comes from showing up consistently. Every workshop builds on the last.",
+      "One workshop a month won't teach you to handstand. Learning how to train yourself between them will. That's what we're here for.",
     accent: "text-primary-light",
   },
   {
     number: "03",
-    title: "Community & Connection",
+    title: "Train with people",
     description:
-      "This isn't a gym — it's a community. Everyone belongs, everyone supports each other.",
+      "Meet the people you'll practise with — in the park, the gym, wherever. The community is the point.",
     accent: "text-secondary-light",
   },
 ];

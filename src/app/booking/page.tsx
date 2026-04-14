@@ -19,17 +19,17 @@ export default function BookingPage() {
       <section className="bg-charcoal pt-32 pb-24 lg:pt-40 lg:pb-32">
         <div className="max-w-7xl mx-auto px-6">
           <p className="font-[family-name:var(--font-caveat)] text-primary-light text-xl mb-4">
-            Small groups, real attention
+            April 25 — 2:00–3:30 PM
           </p>
           <h1
             className="font-[family-name:var(--font-bebas)] text-off-white uppercase leading-none"
             style={{ fontSize: "clamp(4rem, 12vw, 11rem)" }}
           >
-            Book a{" "}
-            <span className="text-outline-electric">class</span>
+            Sign{" "}
+            <span className="text-outline-electric">up.</span>
           </h1>
           <p className="mt-8 text-sand/60 text-lg max-w-lg leading-relaxed">
-            Downtown Toronto. Two coaches. Max 16. All levels.
+            Downtown Toronto. 90 minutes. Max 16. All levels.
           </p>
         </div>
       </section>
@@ -75,18 +75,18 @@ export default function BookingPage() {
             {[
               {
                 icon: <Calendar size={18} />,
-                title: "Monthly schedule",
-                body: "One workshop per month. Dates announced a few weeks ahead — follow on Instagram or sign up on Luma to be notified.",
+                title: "90-minute format",
+                body: "30 minutes warm-up, 30 minutes handstand practice split by level, 30 minutes HIIT finisher. You'll leave exhausted — in the best way.",
               },
               {
                 icon: <MapPin size={18} />,
                 title: "Downtown Toronto",
-                body: "Every workshop is in the downtown core. Exact address goes out to registered attendees a few days before.",
+                body: "Location rotates — different downtown spots each month. Exact address goes out to registered attendees a few days before.",
               },
               {
                 icon: <Users size={18} />,
-                title: "2 coaches, 16 people",
-                body: "Two instructors means everyone gets real attention — eyes on your form, not just a general correction shouted across the room.",
+                title: "2 hosts, 16 people",
+                body: "Jonny coaching, Garson Karrel co-hosting and spotting. Small group means real attention — not a correction shouted across the room.",
               },
             ].map((item) => (
               <div key={item.title} className="flex gap-5 p-6 rounded-2xl border border-warm-gray/10 hover:bg-sand/20 transition-colors">
@@ -110,7 +110,15 @@ export default function BookingPage() {
               {[
                 {
                   q: "Do I need experience?",
-                  a: "Not at all. If you've never done a handstand in your life, you're exactly who this is for.",
+                  a: "No. First-timers and people who haven't moved in a while are exactly who this is for.",
+                },
+                {
+                  q: "How fit do I need to be?",
+                  a: "Fit enough to move for 90 minutes. If you can walk up a few flights of stairs, you'll manage.",
+                },
+                {
+                  q: "Will I handstand after one class?",
+                  a: "Honestly? No. Handstands take years — like learning to walk. You'll leave knowing how to train, and with people to train with.",
                 },
                 {
                   q: "What should I wear?",

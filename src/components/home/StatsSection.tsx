@@ -4,10 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: 15, suffix: "", label: "Years of practice", note: "since the first wall kick-up" },
+  { value: 15, suffix: "", label: "Years of practice", note: "with plenty of breaks — the addiction stuck" },
   { value: 1, suffix: "", label: "Workshop per month", note: "downtown Toronto" },
   { value: 16, suffix: "", label: "Spots per workshop", note: "intentionally small" },
-  { value: 2, suffix: "", label: "Coaches per session", note: "so you always get expert eyes on you" },
+  { value: 2, suffix: "", label: "Hosts per session", note: "Jonny coaching, Garson spotting" },
 ];
 
 function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {

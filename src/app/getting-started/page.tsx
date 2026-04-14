@@ -34,15 +34,16 @@ const steps = [
   },
   {
     number: "06",
-    title: "Keep coming back",
-    description: "One workshop plants the seed. Consistent practice makes it grow. Show up every month and watch what happens.",
+    title: "The real work is between classes",
+    description: "One workshop a month doesn't teach you to handstand — your training the other 29 days does. We'll show you how, and connect you with people to train with.",
   },
 ];
 
 const myths = [
-  { myth: "You need to be strong", truth: "Technique matters far more than strength. Many beginners surprise themselves." },
+  { myth: "You need to be strong", truth: "Helpful, but not the gate. Technique and consistency matter more." },
   { myth: "You need to be flexible", truth: "Handstands are mostly about alignment, not flexibility. Tight hamstrings? No problem." },
-  { myth: "It takes years to learn", truth: "You'll kick up against a wall in your first session. Freestanding comes faster than you think." },
+  { myth: "One workshop and you'll be handstanding", truth: "Handstands take years — like learning to walk. One workshop gets you started and shows you how to train." },
+  { myth: "It's a gentle yoga-style class", truth: "It's a workout. 90 minutes, HIIT finisher, you'll leave exhausted." },
   { myth: "It's only for gymnasts", truth: "Most students have zero gymnastics background. It's a skill — skills can be learned." },
 ];
 
@@ -63,7 +64,7 @@ export default function GettingStartedPage() {
             <span className="text-outline-electric">here.</span>
           </h1>
           <p className="mt-8 text-sand/60 text-lg max-w-lg leading-relaxed">
-            Everything you need to know before your first session. Less scary than you think.
+            Everything you need to know before your first workshop. Less scary than you think — but honest about what it takes.
           </p>
         </div>
       </section>

@@ -21,7 +21,7 @@ export function Footer() {
               <span className="text-electric">Work</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-sand/60">
-              Monthly handstand workshop, downtown Toronto. All levels. Small groups. Two coaches.
+              Monthly handstand workshop in Toronto. 90 minutes. 16 spots. Co-hosted by Jonny & Garson.
             </p>
             <SocialLinks className="mt-6" />
           </div>

@@ -99,7 +99,7 @@ export default function GalleryPage() {
             <span className="text-outline-electric">gallery</span>
           </h1>
           <p className="mt-8 text-sand/60 text-lg max-w-lg leading-relaxed">
-            A glimpse into what happens when people dare to go upside down together.
+            What 90 minutes of handstand practice actually looks like.
           </p>
         </div>
       </section>
