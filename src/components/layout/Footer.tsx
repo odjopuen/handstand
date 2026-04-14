@@ -66,7 +66,7 @@ export function Footer() {
                 href="/booking"
                 className="text-sm text-sand/60 transition-colors hover:text-primary-light"
               >
-                Sign Up for the Workshop
+                Workshop Sign Up
               </Link>
             </nav>
           </div>

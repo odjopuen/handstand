@@ -141,7 +141,7 @@ export default function ContactPage() {
                   href="/booking"
                   className="inline-flex items-center justify-center rounded-full bg-electric text-off-white font-bold text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
                 >
-                  Sign Up for the Workshop
+                  Workshop Sign Up
                 </a>
               </div>
             </div>

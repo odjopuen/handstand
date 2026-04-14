@@ -59,7 +59,7 @@ export function CTABanner() {
             href="/booking"
             className="inline-flex items-center justify-center rounded-full bg-electric text-off-white font-bold text-sm px-10 py-5 tracking-wide uppercase hover:bg-electric-dark transition-all duration-200 hover:scale-[1.02]"
           >
-            Sign Up for the Workshop
+            Workshop Sign Up
           </Link>
           <Link
             href="/getting-started"
