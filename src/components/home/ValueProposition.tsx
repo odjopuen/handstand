@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 const pillars = [
   {
     number: "01",
-    title: "Patience is the skill",
+    title: "Consistency is key",
     description:
-      "Handstands are more a practice of patience than a workout. Show up, fall, adjust, show up again. That's the whole game.",
+      "Handstands reward showing up more than going hard. Show up, fall, adjust, show up again. That's the whole game.",
     accent: "text-electric",
   },
   {

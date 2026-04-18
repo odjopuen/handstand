@@ -62,7 +62,7 @@ export function NewsletterCapture() {
               Join the community
             </motion.a>
 
-            <p className="mt-4 text-sand/25 text-xs">Free to join. Leave anytime.</p>
+            <p className="mt-4 text-sand/25 text-xs">Free to join.</p>
           </div>
         </div>
       </div>

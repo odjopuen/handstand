@@ -18,7 +18,7 @@ export function Hero() {
       {/* Photo background */}
       <div className="absolute inset-0">
         <Image
-          src="/images/site/hero-bg.jpg"
+          src="/images/site/gallery-handstand-spotted-wide.jpg"
           alt=""
           fill
           priority
