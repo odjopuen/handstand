@@ -23,6 +23,27 @@ const values = [
   },
 ];
 
+const scenicShots = [
+  {
+    src: "/images/site/about-scenic-amazon.jpg",
+    alt: "Handstand on the bow of a canoe on the Amazon river",
+    place: "Amazonas",
+    year: "2022",
+  },
+  {
+    src: "/images/site/about-scenic-lanzarote.jpg",
+    alt: "Handstand on concrete blocks in a red desert landscape",
+    place: "Lanzarote",
+    year: "2024",
+  },
+  {
+    src: "/images/site/about-scenic-panama.jpg",
+    alt: "Silhouette handstand in a Panama tidal pool at sunset",
+    place: "Panama",
+    year: "2025",
+  },
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -140,6 +161,36 @@ export default function AboutPage() {
               <p className="font-[family-name:var(--font-dm-serif)] text-charcoal text-lg italic">
                 That&apos;s the part I love most. Teaching people to trust the process when they can&apos;t yet see the result.
               </p>
+            </div>
+          </div>
+
+          {/* Scenic proof — handstands, everywhere */}
+          <div className="mt-20 lg:mt-24">
+            <p className="font-[family-name:var(--font-caveat)] text-warm-gray text-lg mb-10">
+              handstands come with me
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10">
+              {scenicShots.map((shot) => (
+                <figure key={shot.src}>
+                  <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-warm-gray/10">
+                    <Image
+                      src={shot.src}
+                      alt={shot.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  </div>
+                  <figcaption className="mt-3 flex items-baseline justify-between gap-3">
+                    <span className="font-[family-name:var(--font-dm-serif)] italic text-charcoal text-lg">
+                      {shot.place}
+                    </span>
+                    <span className="font-[family-name:var(--font-bebas)] text-warm-gray text-sm tracking-[0.25em]">
+                      {shot.year}
+                    </span>
+                  </figcaption>
+                </figure>
+              ))}
             </div>
           </div>
 

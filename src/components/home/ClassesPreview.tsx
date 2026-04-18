@@ -15,9 +15,9 @@ const NEXT_WORKSHOP = {
 // ─────────────────────────────────────────────────────────────────────────────
 
 const photos = [
-  { src: "/images/site/class-foundations.jpg", alt: "Workshop participants working together" },
-  { src: "/images/site/partner-work.jpg", alt: "Partner practice and support" },
-  { src: "/images/site/class-community.jpg", alt: "The community in action" },
+  { src: "/images/site/gallery-handstand-freestanding-2.jpg", alt: "Student holding a freestanding handstand, classmates watching" },
+  { src: "/images/site/gallery-jonny-spotting-closeup-2.jpg", alt: "Jonny hands-on spotting a handstand" },
+  { src: "/images/site/gallery-jonny-portrait-2.jpg", alt: "Jonny coaching a student" },
 ];
 
 export function ClassesPreview() {
@@ -34,8 +34,8 @@ export function ClassesPreview() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="grid grid-cols-2 gap-3"
           >
-            {/* Large top-left */}
-            <div className="relative aspect-[4/5] rounded-xl overflow-hidden col-span-1 row-span-2">
+            {/* Large top-left — stretches to match the 2 stacked squares exactly */}
+            <div className="relative rounded-xl overflow-hidden col-span-1 row-span-2 min-h-0">
               <Image
                 src={photos[0].src}
                 alt={photos[0].alt}

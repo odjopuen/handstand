@@ -155,87 +155,33 @@ export default function WorkshopPage() {
           <p className="font-[family-name:var(--font-caveat)] text-sand/40 text-lg mb-12">
             from the last workshop
           </p>
-          <div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
             {[
-              "/images/site/class-foundations.jpg",
-              "/images/site/class-progression.jpg",
-              "/images/site/class-community.jpg",
-              "/images/site/partner-work.jpg",
-              "/images/site/floor-work.jpg",
-              "/images/site/jonny-coaching.jpg",
+              "/images/site/gallery-student-portrait.jpg",
+              "/images/site/class-wide.jpg",
+              "/images/site/gallery-student-handstand-group.jpg",
+              "/images/site/class-wall-handstand-row.jpg",
+              "/images/site/gallery-student-handstand-spotted.jpg",
+              "/images/site/gallery-handstand-spotted-wide-2.jpg",
+              "/images/site/class-hiit-rollers.jpg",
+              "/images/site/gallery-partner-plank-drill.jpg",
+              "/images/site/gallery-student-partner-lift.jpg",
             ].map((src, i) => (
-              <div key={i} className={`relative rounded-xl overflow-hidden ${i === 0 ? "aspect-[4/3] lg:col-span-2" : "aspect-square"}`}>
+              <div key={i} className="group relative aspect-[4/5] rounded-xl overflow-hidden bg-white/5">
                 <Image
                   src={src}
                   alt="Workshop photo"
                   fill
-                  className="object-cover object-center hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
+                  sizes="(max-width: 768px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-charcoal/20" />
+                <div className="absolute inset-0 bg-charcoal/15 group-hover:bg-charcoal/5 transition-colors duration-300" />
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="bg-off-white py-24 lg:py-32">
-        <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[family-name:var(--font-dm-serif)] text-2xl text-charcoal mb-10">
-            Common questions
-          </h2>
-          <div className="space-y-8">
-            {[
-              {
-                q: "Do I need any experience?",
-                a: "No. First-timers and people who haven't moved in a while are exactly who this is for. You won't be the only one.",
-              },
-              {
-                q: "How fit do I need to be?",
-                a: "Fit enough to move for 90 minutes. If you can walk up a few flights of stairs, you'll manage — and you'll be better for coming.",
-              },
-              {
-                q: "Will I be able to handstand after one class?",
-                a: "Honestly? Not fully — a clean handstand takes time, closer to learning to walk than learning a trick. But you'll leave knowing exactly how to train, and with people to train with.",
-              },
-              {
-                q: "What should I wear?",
-                a: "Comfortable athletic wear. Bare feet or grip socks. No shoes.",
-              },
-              {
-                q: "How do I find out the location?",
-                a: "Location rotates — we use different downtown Toronto spots. Exact address is in the Luma confirmation a few days before.",
-              },
-              {
-                q: "What if it's full?",
-                a: "Join the waitlist on Luma — you'll be notified automatically if a spot opens.",
-              },
-              {
-                q: "Can I bring someone?",
-                a: "Yes — just have them sign up separately on Luma.",
-              },
-            ].map((item) => (
-              <div key={item.q} className="border-b border-warm-gray/10 pb-8 last:border-0">
-                <h3 className="font-medium text-charcoal mb-2">{item.q}</h3>
-                <p className="text-warm-gray text-sm leading-relaxed">{item.a}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12">
-            <a
-              href={LUMA_EVENT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 justify-center rounded-full bg-electric text-off-white font-bold text-sm px-10 py-5 tracking-wide uppercase hover:bg-electric-dark transition-all duration-200 hover:scale-[1.02]"
-            >
-              Sign up for April 25
-              <ArrowUpRight size={16} />
-            </a>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

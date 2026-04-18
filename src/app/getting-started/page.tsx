@@ -125,6 +125,52 @@ export default function GettingStartedPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="bg-off-white py-24 lg:py-32">
+        <div className="max-w-3xl mx-auto px-6">
+          <h2 className="font-[family-name:var(--font-dm-serif)] text-2xl text-charcoal mb-10">
+            Common questions
+          </h2>
+          <div className="space-y-8">
+            {[
+              {
+                q: "Do I need any experience?",
+                a: "No. First-timers and people who haven't moved in a while are exactly who this is for. You won't be the only one.",
+              },
+              {
+                q: "How fit do I need to be?",
+                a: "Fit enough to move for 90 minutes. If you can walk up a few flights of stairs, you'll manage — and you'll be better for coming.",
+              },
+              {
+                q: "Will I be able to handstand after one class?",
+                a: "Honestly? Not fully — a clean handstand takes time, closer to learning to walk than learning a trick. But you'll leave knowing exactly how to train, and with people to train with.",
+              },
+              {
+                q: "What should I wear?",
+                a: "Comfortable athletic wear. Bare feet or grip socks. No shoes.",
+              },
+              {
+                q: "How do I find out the location?",
+                a: "Location rotates — we use different downtown Toronto spots. Exact address is in the Luma confirmation a few days before.",
+              },
+              {
+                q: "What if it's full?",
+                a: "Join the waitlist on Luma — you'll be notified automatically if a spot opens.",
+              },
+              {
+                q: "Can I bring someone?",
+                a: "Yes — just have them sign up separately on Luma.",
+              },
+            ].map((item) => (
+              <div key={item.q} className="border-b border-warm-gray/10 pb-8 last:border-0">
+                <h3 className="font-medium text-charcoal mb-2">{item.q}</h3>
+                <p className="text-warm-gray text-sm leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-charcoal py-24 text-center">
         <h2
