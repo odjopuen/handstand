@@ -43,7 +43,7 @@ const myths = [
   { myth: "You need to be strong", truth: "Helpful, but not the gate. Technique and consistency matter more." },
   { myth: "You need to be flexible", truth: "Handstands are mostly about alignment, not flexibility. Tight hamstrings? No problem." },
   { myth: "One workshop and you'll be handstanding", truth: "A clean handstand takes time — closer to learning to walk than learning a trick. One workshop gets you started and shows you how to train." },
-  { myth: "It's a gentle yoga-style class", truth: "It's a workout. 90 minutes, HIIT finisher, you'll leave exhausted." },
+  { myth: "I'll be too exhausted to keep up", truth: "Medium intensity, not relentless. The practice block is patient, precise work. The HIIT finisher scales — you set the effort, not the clock." },
   { myth: "It's only for gymnasts", truth: "Most students have zero gymnastics background. It's a skill — skills can be learned." },
 ];
 
