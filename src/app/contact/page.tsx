@@ -1,6 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { MessageCircle, ArrowUpRight } from "lucide-react";
+
+const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/PLACEHOLDER";
+const LUMA_EVENT_URL = "https://luma.com/uoopsxfs";
 
 export default function ContactPage() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -105,43 +109,49 @@ export default function ContactPage() {
               )}
             </div>
 
-            {/* Right: info */}
-            <div className="space-y-10">
-              <div>
-                <h2 className="font-[family-name:var(--font-dm-serif)] text-2xl text-charcoal mb-8">
-                  Find us
-                </h2>
-                <div className="space-y-6">
-                  <div>
-                    <p className="text-xs font-medium text-charcoal uppercase tracking-wide mb-1">Location</p>
-                    <p className="text-warm-gray">Toronto, Ontario, Canada</p>
-                  </div>
-                  <div>
-                    <p className="text-xs font-medium text-charcoal uppercase tracking-wide mb-1">Workshop</p>
-                    <p className="text-warm-gray">Monthly — downtown Toronto</p>
-                  </div>
-                  <div>
-                    <p className="text-xs font-medium text-charcoal uppercase tracking-wide mb-1">Response time</p>
-                    <p className="text-warm-gray">Usually same day. Always within a couple.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="rounded-2xl bg-sand p-8">
-                <p className="font-[family-name:var(--font-caveat)] text-warm-gray text-lg mb-3">
-                  Quickest way in?
+            {/* Right: 3 paths */}
+            <div className="space-y-4">
+              {/* WhatsApp */}
+              <div className="rounded-2xl bg-charcoal p-8">
+                <p className="font-[family-name:var(--font-caveat)] text-sand/50 text-lg mb-2">
+                  best for quick questions
                 </p>
-                <p className="font-[family-name:var(--font-dm-serif)] text-xl text-charcoal mb-4">
-                  Just come to a workshop.
+                <p className="font-[family-name:var(--font-dm-serif)] text-xl text-off-white mb-3">
+                  Join the community
                 </p>
-                <p className="text-warm-gray text-sm mb-5">
-                  Meet us in person. Ask your questions. Try it out. No obligation.
+                <p className="text-sand/50 text-sm mb-6 leading-relaxed">
+                  Where dates drop, locations are shared, and people ask questions between workshops. This is where the community actually lives.
                 </p>
                 <a
-                  href="/booking"
-                  className="inline-flex items-center justify-center rounded-full bg-electric text-off-white font-bold text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
+                  href={WHATSAPP_GROUP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-electric text-off-white font-bold text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-electric-dark transition-colors"
+                >
+                  <MessageCircle size={15} />
+                  Join WhatsApp group
+                </a>
+              </div>
+
+              {/* Workshop signup */}
+              <div className="rounded-2xl bg-sand p-8">
+                <p className="font-[family-name:var(--font-caveat)] text-warm-gray text-lg mb-2">
+                  ready to try it?
+                </p>
+                <p className="font-[family-name:var(--font-dm-serif)] text-xl text-charcoal mb-3">
+                  Sign up for a workshop
+                </p>
+                <p className="text-warm-gray text-sm mb-6 leading-relaxed">
+                  Monthly, downtown Toronto. 90 minutes. All levels. Meet us in person — that&apos;s the best way to ask anything.
+                </p>
+                <a
+                  href={LUMA_EVENT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-charcoal text-off-white font-bold text-sm px-7 py-3.5 tracking-wide uppercase hover:bg-charcoal/80 transition-colors"
                 >
                   Workshop Sign Up
+                  <ArrowUpRight size={15} />
                 </a>
               </div>
             </div>
