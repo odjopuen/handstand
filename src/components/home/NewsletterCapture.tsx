@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
-const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/PLACEHOLDER"; // ← replace with your group invite link
+const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/JxQitls8UVe1lPqY4lNKQO";
 
 export function NewsletterCapture() {
   return (

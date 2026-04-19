@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { MessageCircle, ArrowUpRight } from "lucide-react";
 
-const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/PLACEHOLDER";
+const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/JxQitls8UVe1lPqY4lNKQO";
 const LUMA_EVENT_URL = "https://luma.com/uoopsxfs";
 
 export default function ContactPage() {
