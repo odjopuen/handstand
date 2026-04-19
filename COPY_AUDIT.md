@@ -84,7 +84,7 @@
 ## Workshop page (`src/app/classes/page.tsx`)
 
 - [x] Hero subtext rewritten
-- [x] "What to expect" 4 cards fully rewritten (structure / not yoga / all levels / co-hosted)
+- [x] "What to expect" 4 cards fully rewritten (structure / focused approach / all levels / co-hosted)
 - [x] FAQ rewrites + added "How fit do I need to be?" + "Will I handstand after one class?"
 - [x] FAQ location answer updated to mention rotating downtown locations
 - [x] Meta description rewritten
@@ -169,3 +169,4 @@
 | 2026-04-14 | Revised hero eyebrow to *"Practice, consistency, patience. We lay the ground work."* — brand pun, echoes the patience voice. | #1 |
 | 2026-04-14 | Standardized all workshop CTA buttons from *"Sign Up for (the/next) Workshop"* → *"Workshop Sign Up"* (Hero, CTABanner, Footer, About, Contact, Gallery, Getting Started). | #1 |
 | 2026-04-14 | Softened "handstands take years" phrasing site-wide to be encouraging, not demotivating — updated `constants.ts` description, About values card + pullquote, Classes FAQ, Booking FAQ, Getting Started myth. New pattern: "a clean handstand takes time — closer to learning to walk than learning a trick". Jonny's personal "went on for years" line kept as-is (authentic origin story). | #1 |
+| 2026-04-18 | Workshop page card #2 reframed: "Not a yoga class" → "A focused approach". Body rewritten to define the class by its structure + intent (every block has a purpose) rather than by what it isn't. Matches the "focused approach" language being used in outreach posts. | #2 |

@@ -23,8 +23,8 @@ const whatToExpect = [
     body: "30 minutes warm-up (wrists get the love they deserve). 30 minutes handstand practice, split by level. 30 minutes full-body HIIT to finish. 90 minutes total.",
   },
   {
-    heading: "Not a yoga class",
-    body: "This is a workout. You'll sweat. You'll probably be sore tomorrow. The handstand stuff is patient, precise work — the HIIT at the end makes sure nobody leaves with energy left over.",
+    heading: "A focused approach",
+    body: "Every block has a purpose. Warm-up preps wrists and shoulders for what's coming. Practice splits by level — beginners get real coaching on the basics, experienced folks get pushed on the shape. A strength finisher that transfers to holding a line. You'll be sweating by the end — but nothing in the 90 minutes is filler.",
   },
   {
     heading: "All levels, genuinely",
