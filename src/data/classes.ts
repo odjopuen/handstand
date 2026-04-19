@@ -25,9 +25,9 @@ export const classes: ClassDefinition[] = [
     slug: "workshop",
     title: "Ground Work Monthly Workshop",
     shortDescription:
-      "90 minutes. All levels. Warm-up, handstand practice split by level, and a HIIT finisher so nothing's left in the tank.",
+      "90 minutes. All levels. Warm-up, handstand practice split by level, and a HIIT finisher that builds the strength the shape needs.",
     fullDescription:
-      "One workshop a month, downtown Toronto. 30 minutes of handstand-specific warm-up (wrists get the love they deserve). 30 minutes of handstand practice, split by level — first-timers against the wall, intermediates finding their balance point, advanced chasing new shapes. 30 minutes of full-body HIIT to finish — because handstand practice is patient work, and we want you leaving exhausted. This is a workout, not a yoga class. Bring it.",
+      "One workshop a month, downtown Toronto. 30 minutes of handstand-specific warm-up (wrists get the love they deserve). 30 minutes of handstand practice, split by level — first-timers against the wall, intermediates finding their balance point, advanced chasing new shapes. 30 minutes of full-body HIIT to finish — because handstand practice is patient work, and the strength you build at the end is what makes the shape stick. Every minute has a purpose. Come train.",
     level: "all-levels",
     durationMinutes: 90,
     maxParticipants: 16,
